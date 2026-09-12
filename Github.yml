@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>The ReadME Project</title>
+    <link>https://github.com/readme</link>
+    <atom:link href="https://github.com/readme.rss" rel="self" type="application/rss+xml"/>
+    <image>
+      <title>The ReadME Project</title>
+      <url>https://github.githubassets.com/assets/readme-project-1b8ad1b2a413.jpg</url>
+      <link>https://github.com/readme</link>
+    </image>
+    <description>The ReadME Project amplifies the voices of the open source community: the maintainers, developers, and teams whose contributions move the world forward every day.</description>
+    <item>
+      <title>Coding accessibility: Software by the blind, for the blind</title>
+      <link>https://github.com/readme/featured/nvda-coding-accessibility-software-blind</link>
+      <description>NVDA and OSARA provide access to information, employment, community, and more, as well as empower a new generation to build a more accessible world.</description>
+      <pubDate>Thu, 16 May 2024 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/nvda-coding-accessibility-software-blind</guid>
+    </item>
+    <item>
+      <title>Coding accessibility: How Della found her voice with open source AAC</title>
+      <link>https://github.com/readme/featured/open-source-aac</link>
+      <description>Discover FreeSpeechAAC, an open source assistive communication tool thoughtfully designed by Archer Calder, his nonspeaking sister Della, and the open source community. </description>
+      <pubDate>Sun, 3 Dec 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/open-source-aac</guid>
+    </item>
+    <item>
+      <title>Scaling standards and community in your organization</title>
+      <link>https://github.com/readme/guides/federated-model</link>
+      <description>Learn how to apply open source community ideas to your organization to spread standards and best practices without sacrificing autonomy and innovation.</description>
+      <pubDate>Tue, 24 Oct 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/federated-model</guid>
+    </item>
+    <item>
+      <title>A beginner’s guide to running and managing custom CodeQL queries</title>
+      <link>https://github.com/readme/guides/custom-codeql-queries</link>
+      <description>Learn how to transform your code with custom CodeQL queries that empower you to surface security vulnerabilities and discover new insights.
+</description>
+      <pubDate>Tue, 24 Oct 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/custom-codeql-queries</guid>
+    </item>
+    <item>
+      <title>Coding accessibility: Building autonomy with AI</title>
+      <link>https://github.com/readme/featured/accessibility-artificial-intelligence</link>
+      <description>After bringing Braille to the digital world in the 1980s and creating the first screen reader for the web in the 1990s, Dr. Chieko Asakawa is now working on an AI-enabled suitcase—and says collaboration is the key to more accessible tech.</description>
+      <pubDate>Tue, 10 Oct 2023 17:45:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/accessibility-artificial-intelligence</guid>
+    </item>
+    <item>
+      <title>Treat accessibility issues as bugs, not feature requests</title>
+      <link>https://github.com/readme/guides/fix-accessibility-bugs</link>
+      <description>It takes leadership to treat accessibility issues as bugs, and prioritize them before a project is released. Learn how they do it at Drupal.
+</description>
+      <pubDate>Tue, 8 Aug 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/fix-accessibility-bugs</guid>
+    </item>
+    <item>
+      <title>Provisioning self-hosted GitHub Actions runners on demand</title>
+      <link>https://github.com/readme/guides/github-runners-philips</link>
+      <description>Unlock the secrets of scaling GitHub self-hosted runners in the enterprise cloud. Dive into Philips' method with Terraform and GitHub Actions to elevate your CI/CD game.</description>
+      <pubDate>Tue, 8 Aug 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/github-runners-philips</guid>
+    </item>
+    <item>
+      <title>Is Laravel the happiest developer community on the planet?</title>
+      <link>https://github.com/readme/featured/laravel-community</link>
+      <description>How the PHP framework Laravel prioritizes developer experience by focusing on details and avoiding the hype cycle</description>
+      <pubDate>Tue, 8 Aug 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/laravel-community</guid>
+    </item>
+    <item>
+      <title>Realizing potential with AI</title>
+      <link>https://github.com/readme/stories/anton-mirhorodchenko</link>
+      <description>Neither keyboards nor voice-to-text work well for Anton, a developer with cerebral palsy. He uses AI and LLMs to pursue his passion for programming and shows others how they can harness these technologies to accomplish more.</description>
+      <pubDate>Tue, 8 Aug 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/anton-mirhorodchenko</guid>
+    </item>
+    <item>
+      <title>Secure cloud deployment and delivery</title>
+      <link>https://github.com/readme/guides/github-actions-eli-lilly</link>
+      <description>Pharmaceutical giant Eli Lilly shows how they used GitHub to build a better developer environment and increase speed to delivery.</description>
+      <pubDate>Tue, 11 Jul 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/github-actions-eli-lilly</guid>
+    </item>
+    <item>
+      <title>Turbulent times call for adaptive leadership</title>
+      <link>https://github.com/readme/guides/adaptive-leadership</link>
+      <description>Learn what adaptive leadership is, how it compares to other leadership styles, and how you can adopt its principles.
+</description>
+      <pubDate>Tue, 11 Jul 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/adaptive-leadership</guid>
+    </item>
+    <item>
+      <title>Make your first open source contribution in four easy steps</title>
+      <link>https://github.com/readme/guides/first-oss-contribution</link>
+      <description>This guide demystifies open source software and provides a comprehensive roadmap for making your first contribution. Enhance your skills, grow your network, and make a real difference in the tech community.</description>
+      <pubDate>Tue, 11 Jul 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/first-oss-contribution</guid>
+    </item>
+    <item>
+      <title>TypeScript and the dawn of gradual types</title>
+      <link>https://github.com/readme/featured/typescript-gradual-types</link>
+      <description>TypeScript ushered in an era of gradual typing, where developers don’t have to choose between the agility of dynamic languages and the type safety of static languages, all while helping avoid the pitfalls of both.</description>
+      <pubDate>Tue, 11 Jul 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/typescript-gradual-types</guid>
+    </item>
+    <item>
+      <title>From fixing computers on farms to democratizing DevOps</title>
+      <link>https://github.com/readme/stories/kyler-middleton</link>
+      <description>Kyler Middleton’s journey from a small farm in Nebraska to the tech industry is a testament to resilience and empowerment. Read her story of overcoming adversity and democratizing DevOps.</description>
+      <pubDate>Tue, 11 Jul 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/kyler-middleton</guid>
+    </item>
+    <item>
+      <title>From chaos to clarity: Use code visibility to illuminate unfamiliar code</title>
+      <link>https://github.com/readme/guides/code-visibility-codesee</link>
+      <description>What code visibility is, why it matters, and how you can make your code more visible.</description>
+      <pubDate>Tue, 13 Jun 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/code-visibility-codesee</guid>
+    </item>
+    <item>
+      <title>Do your part to secure the open source supply chain</title>
+      <link>https://github.com/readme/guides/dependency-risk</link>
+      <description>Understanding the security risks within the open source ecosystem, from supply chain attacks to protestware, and the tools and methods to mitigate them.</description>
+      <pubDate>Tue, 13 Jun 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/dependency-risk</guid>
+    </item>
+    <item>
+      <title>Finish your projects</title>
+      <link>https://github.com/readme/guides/finish-your-projects</link>
+      <description>Starting a project can be full of excitement, hope, and blissful productivity. Finishing that last ten percent, however, can feel like too much. Here’s how to get past that and actually finish.</description>
+      <pubDate>Tue, 13 Jun 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/guides/finish-your-projects</guid>
+    </item>
+    <item>
+      <title>Non-code contributions are the secret to open source success</title>
+      <link>https://github.com/readme/featured/open-source-non-code-contributions</link>
+      <description>Why non-code contributions like documentation and support are so important to open source, why even experienced programmers should make non-code contributions, and how your project can attract more non-code contributions.</description>
+      <pubDate>Tue, 13 Jun 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/open-source-non-code-contributions</guid>
+    </item>
+    <item>
+      <title>Advancing inclusion with progressive enhancement</title>
+      <link>https://github.com/readme/stories/aaron-gustafson</link>
+      <description>Aaron Gustafson, web standards and accessibility advocate, shares his evolution from early internet user to champion of progressive enhancement—and how we can all work to create a more inclusive digital landscape.</description>
+      <pubDate>Tue, 13 Jun 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/aaron-gustafson</guid>
+    </item>
+    <item>
+      <title>How ‘open’ should your open source be?</title>
+      <link>https://github.com/readme/featured/how-open-is-open-source</link>
+      <description>Open source isn’t one size fits all. Some is open, some closed, and most is in-between. From Litestream to Lua to Prometheus and more, maintainers explain their reasons for where they lie on the spectrum from open to closed, and why there’s more to contributions than code.</description>
+      <pubDate>Tue, 9 May 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/how-open-is-open-source</guid>
+    </item>
+    <item>
+      <title> Coding accessibility: Disability as catalyst for creativity</title>
+      <link>https://github.com/readme/featured/disability-creativity</link>
+      <description>When faced with accessibility barriers, developer Paul Chiou gets creative, building custom hardware interfaces and innovative software solutions for himself and others. Read how Chiou works to increase access for all. </description>
+      <pubDate>Tue, 9 May 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/disability-creativity</guid>
+    </item>
+    <item>
+      <title>Champion accessibility to unleash untapped potential</title>
+      <link>https://github.com/readme/stories/annalu-waller</link>
+      <description>Dr. Annalu Waller, rehabilitation engineer and Professor of Human Communication Technologies at Dundee University, shares her path to overcoming barriers and empowering others to reach their full potential.</description>
+      <pubDate>Tue, 9 May 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/annalu-waller</guid>
+    </item>
+    <item>
+      <title>Open source is fueling the future of nuclear physics</title>
+      <link>https://github.com/readme/featured/nuclear-fusion-open-source</link>
+      <description>A look at the open source artificial intelligence (AI), machine learning (ML), and high performance computing (HPC) tools used in the nuclear fusion ignition breakthrough at Lawerence Livermore Labs.
+</description>
+      <pubDate>Tue, 11 Apr 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/nuclear-fusion-open-source</guid>
+    </item>
+    <item>
+      <title>Putting the African open source community on the map</title>
+      <link>https://github.com/readme/stories/ruth-ikegah</link>
+      <description>Once indifferent about computers, Ruth Ikegah put in the time, patience, and work to become a force for change in open source, and is now connecting other Africans with the resources they need to succeed, too.</description>
+      <pubDate>Tue, 11 Apr 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/ruth-ikegah</guid>
+    </item>
+    <item>
+      <title>From gaming with your eyes to coding with AI: New frontiers for accessibility</title>
+      <link>https://github.com/readme/featured/open-source-accessibility</link>
+      <description>Open source offers developers with disabilities the flexibility needed to participate and collaborate. Their contributions and involvement in the research, design, and development of software are integral to making technology accessible to all. </description>
+      <pubDate>Tue, 14 Mar 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/featured/open-source-accessibility</guid>
+    </item>
+    <item>
+      <title>Invite the critics and keep learning</title>
+      <link>https://github.com/readme/stories/rohan-gupta</link>
+      <description>When Windows 11 debuted with limited access, @blueedgetechno created a *very* convincing clone. Hear why he has a female avatar, maintains a growth mindset, and more on The ReadME Project:</description>
+      <pubDate>Tue, 14 Mar 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/rohan-gupta</guid>
+    </item>
+    <item>
+      <title>Out of the slums and into open source</title>
+      <link>https://github.com/readme/stories/santosh-yadav</link>
+      <description>From a slum in India to a Google Developer Expert in Germany, @SantoshYadavDev shares how he leveraged software development as a path out of poverty in The ReadME Project:</description>
+      <pubDate>Tue, 14 Feb 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/santosh-yadav</guid>
+    </item>
+    <item>
+      <title>Raising the bar for open source standards</title>
+      <link>https://github.com/readme/stories/leonardo-javier-russo</link>
+      <description>After seeing first-hand how stifling inaccessibility is, Leonardo strives to create an open source world where everyone can seamlessly participate. He shares his full story on The ReadME Project:</description>
+      <pubDate>Tue, 17 Jan 2023 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/leonardo-javier-russo</guid>
+    </item>
+    <item>
+      <title>Building super fans through genuine human connections</title>
+      <link>https://github.com/readme/stories/jana-iris</link>
+      <description>She never considered tech as a potential career path, but @janaboruta leveraged her empathy to successfully build open source communities of super fans. Her full story, now on The ReadME Project: </description>
+      <pubDate>Tue, 13 Dec 2022 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/jana-iris</guid>
+    </item>
+    <item>
+      <title>The purest form of collaboration</title>
+      <link>https://github.com/readme/stories/avi-press</link>
+      <description>Fueled by the versatility of computer science, @avi_press learned by doing, then started a company to help clear the roadblocks he ran into. Get his full story on The ReadME Project:</description>
+      <pubDate>Tue, 15 Nov 2022 02:00:00 +0000</pubDate>
+      <guid>https://github.com/readme/stories/avi-press</guid>
+    </item>
+  </channel>
+</rss>
