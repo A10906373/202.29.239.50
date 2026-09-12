@@ -1,0 +1,49 @@
+HMI
+คู่มือการใช้งานหน้าจอ HMI, การเชื่อมต่อ PLC, และการใช้ SKTool
+รวมคู่มือการใช้งาน HMI (Human-Machine Interface) สำหรับงาน Automation
+สิ่งที่คุณจะได้เรียนรู้
+พื้นฐาน HMI และ SKTool7.1
+เริ่มจากศูนย์ — สร้างโปรเจกต์, ออกแบบหน้าจอ, ใช้ Control ต่างๆ จนถึงระบบ Alarm, Data Logging, Recipe, C Scripting และ Barcode (15 บทเรียนต่อเนื่อง)
+ออกแบบหน้าจอ
+เทคนิคการสร้าง Animation, Popup Window, Dropdown, Toggle Switch, Flowchart และ UI Components อื่นๆ เพื่อหน้าจอที่สวยและใช้งานง่าย
+จัดการข้อมูล
+Latch Address, Data Logging, Countdown Timer, Schedule Table และการควบคุม Screen ด้วย Script
+ระบบผู้ใช้งาน & ความปลอดภัย
+ระบบ Login/Logout, สิทธิ์ผู้ใช้, Password Protection และการล็อค HMI สำหรับระบบผ่อนชำระ
+การเชื่อมต่อ
+เชื่อมต่อ HMI กับ PLC ผ่าน Ethernet, RS485, Modbus TCP/IP, VNC Viewer รวมถึงการใช้ HMI หลายเครื่องกับ PLC ตัวเดียว
+ตั้งค่า & ดูแลรักษา
+ตั้งค่า Font ภาษาไทย, Calibrate หน้าจอ, อัพเดท Firmware, Boot Logo และการ Troubleshoot เบื้องต้น
+คำถามที่พบบ่อย
+HMI คืออะไร?
+HMI (Human-Machine Interface) คือหน้าจอสัมผัสที่ใช้แสดงสถานะและรับคำสั่งจากผู้ใช้งานในระบบควบคุมอุตสาหกรรม ทำหน้าที่เป็นสะพานระหว่างคน (Operator) กับเครื่องจักร (PLC) แทนที่ตู้คอนโทรลแบบเก่าที่มีปุ่มกดและไฟแสดงสถานะจำนวนมาก
+เลือกขนาดหน้าจอ HMI 7 นิ้ว 10 นิ้ว หรือ 15 นิ้ว ดีกว่ากัน?
+7 นิ้ว เหมาะกับเครื่องจักรขนาดเล็ก-กลาง ตู้คอนโทรลพื้นที่จำกัด งบประหยัด (2,490-6,990 บาท) ส่วน 10.2 นิ้ว เหมาะกับเครื่องจักรกลางที่ต้องแสดงข้อมูลหลายตัว เช่น Trend Chart, Recipe (5,690-9,550 บาท) ส่วน 15.6 นิ้ว เหมาะกับห้อง Control Room หรือ SCADA Workstation ที่ Operator ยืนดูจากระยะ 1-2 เมตร (รุ่น SK-156QS-G + WiFi Module ราคา 17,550 บาท)
+HMI Samkoon ใช้กับ PLC ยี่ห้อไหนได้บ้าง?
+HMI Samkoon (SK Series) รองรับ Driver สำหรับ PLC แทบทุกยี่ห้อหลัก เช่น Mitsubishi (FX, Q, L), Siemens (S7-200, S7-1200, S7-300), OMRON (CJ, CP, CS), Delta, Panasonic, Schneider, Allen-Bradley, รวมถึง PLC จีน (Samkoon, Wecon) ผ่าน Modbus RTU/TCP เลือก Driver ใน SKTool ตั้งค่า COM Port ก็ใช้งานได้ทันที
+HMI Touch Screen กับ HMI ปุ่มกดแบบเก่า ต่างกันยังไง?
+Touch Screen ปรับ UI ได้อิสระผ่าน Software (เปลี่ยนหน้าจอ, ภาษา, Layout ได้โดยไม่ต้องเปลี่ยนฮาร์ดแวร์) แสดง Trend Chart, Alarm History, Recipe ได้ ส่วน HMI ปุ่มกดแบบเก่าทำได้แค่กดและดูไฟแสดง ฟังก์ชันจำกัดและพื้นที่หน้าตู้แพง ปัจจุบัน Touch Screen ราคาเริ่มต้น 3,000 บาทก็มีแล้ว ไม่ค่อยมีเหตุผลให้ใช้แบบปุ่มกดในเครื่องใหม่
+HMI รุ่น Q (เช่น SK-070QE) ต่างจากรุ่นปกติยังไง?
+รุ่นที่ลงท้ายด้วยตัว Q มีหลาย COM Port (COM1 + COM2 + COM3) เปิดให้ต่อ PLC, Servo, VFD พร้อมกันบน HMI ตัวเดียว แต่ละ Port ตั้ง Protocol และ Baudrate แยกกันได้ เหมาะกับเครื่องจักรที่มีอุปกรณ์หลายยี่ห้อในระบบเดียว ราคาแพงกว่ารุ่นปกติประมาณ 1,000-2,000 บาท
+HMI Samkoon รองรับภาษาไทยไหม?
+รองรับเต็มตัว — SKTool ติดตั้ง Font ภาษาไทย (Tahoma, Sarabun) ได้ผ่านเมนู Project Settings แสดงผลภาษาไทยได้ทุกขนาดตัวอักษร นอกจากนี้ยังรองรับ Multi-Language Switch ให้ Operator สลับภาษาได้ระหว่างไทย/อังกฤษ/จีน บนหน้าจอเดียว
+กลับ
+มีคำถาม? ติดต่อทีมงาน
+About this item
+Condition
+New. A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable). Packaging should be the same as what is found in a retail store, unless the item was packaged by the manufacturer in non-retail packaging, such as an unprinted box or plastic bag. See the seller's listing for full details. See all item conditions
+Quantity
+10 available
+Item Number
+387062520722
+Brand
+WEINVIEW
+UPC
+Does not apply
+MPN
+Does not apply
+Country of Origin
+China
+Category
+Business & Industrial > Industrial Automation & Motion Controls > PLCs & HMIs > HMI & Open Interface Panels
+สารบัญ
