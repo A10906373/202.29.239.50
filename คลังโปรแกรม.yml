@@ -1,0 +1,2382 @@
+[[ไฟล์:OpenOffice.org Writer.png|thumb|300px|[[OpenOffice.org]] Writer]]
+
+'''ซอฟต์แวร์''' ({{langx|en|software}}) หรือ '''ส่วนชุดคำสั่ง'''<ref>ศัพท์บัญญัติราชบัณฑิตยสถาน (มักเข้าใจผิดกันว่าราชบัณฑิตยสถานบัญญัติคำว่า [[ละมุนภัณฑ์]] ซึ่งไม่ถูกต้อง) </ref> คือ ส่วนหนึ่งของระบบคอมพิวเตอร์ที่ใช้ในการจัดเก็บและประมวลผลข้อมูล เป็นชุดคำสั่งที่บอกวิธีการทำงานของคอมพิวเตอร์ ซึ่งตรงกันข้ามกับฮาร์ดแวร์ที่เป็นระบบคอมพิวเตอร์ที่สามารถจับต้องได้ ในสาขาวิชาวิทยาการคอมพิวเตอร์และวิศวกรรมซอฟต์แวร์นั้น ซอฟต์แวร์คอมพิวเตอร์ คือ ข้อมูลทั้งหมดที่ได้รับการประมวลผลโดยระบบคอมพิวเตอร์ และ โปรแกรมคอมพิวเตอร์ ซอฟต์แวร์คอมพิวเตอร์นั้นประกอบด้วย โปรแกรมคอมพิวเตอร์, ไลบรารี และ ข้อมูลที่ไม่สามารถเรียกใช้งานได้ด้วยโปรแกรมคอมพิวเตอร์ เช่น เอกสารออนไลน์หรือสื่อดิจิทัล คอมพิวเตอร์เครื่องหนึ่งจำเป็นต้องมีทั้งฮาร์ดแวร์และซอฟต์แวร์ และหากขาดอย่างใดอย่างหนึ่งไป จะไม่สามารถใช้งานระบบคอมพิวเตอร์ได้
+
+ในระดับโปรแกรมคอมพิวเตอร์ที่ต่ำที่สุด โค้ดปฏิบัติการนั้น ประกอบด้วย คำสั่งภาษาเครื่อง (machine language) ที่โปรเซสเซอร์ (processor) แต่ละตัวรองรับ โดยทั่วไปคือหน่วยประมวลผลกลาง (CPU) หรือ หน่วยประมวลผลกราฟิก (GPU) ภาษาเครื่อง ประกอบด้วย กลุ่มค่าไบนารี (เลขฐานสอง) ที่แสดงถึงคำสั่งของตัวประมวลผลที่ได้เปลี่ยนสถานะของคอมพิวเตอร์จากสถานะก่อนหน้า เช่น คำสั่งภาษาเครื่องอาจเปลี่ยนค่าที่จัดเก็บไว้ในตำแหน่งจัดเก็บเฉพาะในคอมพิวเตอร์ ซึ่งผู้ใช้ไม่สามารถสังเกตเห็นได้โดยตรง หรือ คำสั่งนั้นอาจเป็นการเรียกอินพุตหรือเอาต์พุตอย่างใดอย่างหนึ่งซึ่งผู้ใช้คอมพิวเตอร์สามารถมองเห็นได้ เช่น การแสดงข้อความบนหน้าจอคอมพิวเตอร์ โปรเซสเซอร์จะดำเนินการตามคำสั่ง ตามลำดับที่ระบุไว้ เว้นแต่จะได้รับคำสั่งให้ "ข้าม" ไปยังคำสั่งอื่น หรือ ระบบปฏิบัติการถูกขัดจังหวะ ในปี ค.ศ. 2015 คอมพิวเตอร์ส่วนบุคคล อุปกรณ์สมาร์ทโฟน และ เซิร์ฟเวอร์ส่วนใหญ่ มีหน่วยประมวลผลที่มีหน่วยประมวลผลหลายหน่วย (multiple execution unit) หรือโปรเซสเซอร์หลายตัว ทำการคำนวณร่วมกันและการประมวลผล ทำให้ส่วนโปรเซสเซอร์สามารถทำงานร่วมกันในเวลาพร้อม ๆ กัน (concurrent activity) มากกว่าระบบโปรเซสเซอร์ในอดีต
+
+ซอฟต์แวร์นั้นนอกจากจะสามารถใช้งานบนคอมพิวเตอร์ได้แล้ว ยังสามารถใช้งานบนเครื่องใช้ หรืออุปกรณ์อื่น เช่น [[โทรศัพท์มือถือ]] หรือ[[หุ่นยนต์]]ในโรงงาน หรือเครื่องใช้ไฟฟ้าต่าง ๆ 
+
+ซอฟต์แวร์ส่วนใหญ่เขียนด้วยภาษาโปรแกรมระดับสูง (high-level programming language) ซึ่งง่ายกว่าและมีประสิทธิภาพมากกว่าสำหรับโปรแกรมเมอร์ เพราะใกล้เคียงกับภาษาธรรมชาติที่มนุษย์ใช้มากกว่าภาษาเครื่อง ภาษาระดับสูงจะถูกแปลเป็นภาษาเครื่องโดยใช้คอมไพเลอร์ (compiler) หรืออินเตอร์พรีตเตอร์ (interpreter) หรือทั้งสองอย่างรวมกัน ซอฟต์แวร์อาจเขียนด้วยภาษาแอสเซมบลีระดับต่ำ (assembly language) ซึ่งมีความสอดคล้องกับคำสั่งภาษาเครื่องของคอมพิวเตอร์อย่างมาก และ ภาษาแอสเซมบลีจะถูกแปลเป็นภาษาเครื่องโดยใช้แอสเซมเบลอร์ (assembler)
+
+== นิรุกติศาสตร์ ==
+คำว่า "ซอฟต์แวร์" ใช้ครั้งแรกโดย [[จอห์น ดับเบิลยู. เทอร์กีย์]] (John W. Turkey) ในปี [[พ.ศ. 2500]] (ค.ศ. 1957) โดยแนวคิดของซอฟต์แวร์ปรากฏครั้งแรกใน[[เรียงความ]]ของ[[แอลัน ทัวริง]] บิดาของ[[วิทยาการคอมพิวเตอร์]] กล่าวกันว่าโปรแกรมคอมพิวเตอร์ชิ้นแรกของโลกเขียนโดย[[เอดา ไบรอน]] เป็นโปรแกรมที่ใช้สำหรับ[[เครื่องวิเคราะห์]] (analytical engine) ของ[[ชาร์ลส แบบเบจ]]
+
+== ความสัมพันธ์กับฮาร์ดแวร์ ==
+ซอฟต์แวร์ เป็นชื่อเรียกเพื่อใช้เปรียบต่างกับ[[อุปกรณ์คอมพิวเตอร์|ฮาร์ดแวร์]] ซึ่งเป็นลักษณะทางกายภาพในการเก็บและประมวลผลของซอฟต์แวร์ ในคอมพิวเตอร์ซอฟต์แวร์จะถูกเรียกใช้งานใน[[แรม]]และประมวลผลผ่าน[[ซีพียู]]
+
+== ประเภทของซอฟต์แวร์ ==
+การแบ่งประเภทของซอฟต์แวร์แบ่งออกได้เป็นหลายแบบ เช่น
+# การแบ่งเชิงเทคนิค อาจแบ่งซอฟต์แวร์เป็น 3 ประเภทหลักคือ
+#* [[ซอฟต์แวร์ระบบ]] (System/Infrastructure software) ใช้ในการทำให้คอมพิวเตอร์ฮาร์ดแวร์ทำงานกับระบบคอมพิวเตอร์ได้ โดยรวมถึง[[ระบบปฏิบัติการ]] [[ไดรเวอร์]] และระบบหลักของคอมพิวเตอร์ต่าง ๆ 
+#* [[โปรแกรมประยุกต์]] หรือซอฟต์แวร์ประยุกต์ (Application software) ช่วยให้ผู้ใช้งานสามารถดำเนินงานต่าง ๆ โดยทั่วไปเช่น [[โปรแกรมสำนักงาน]] [[ฐานข้อมูล]] [[คอมพิวเตอร์เกม]] [[เว็บเบราว์เซอร์]] โดยโปรแกรมประยุกต์จะมี[[จียูไอ]]
+#* [[โปรแกรมคอมพิวเตอร์]] (Tools/Utilities) ประกอบไปด้วยเครื่องมือช่วยให้[[โปรแกรมเมอร์]]เขียนโปรแกรมอื่น ๆ หรือโปรแกรมประยุกต์ได้ เครื่องมือต่าง ๆ ประกอบไปด้วย [[คอมไพเลอร์]] [[อินเตอร์พรีเตอร์]] [[ดีบักเกอร์]]
+# การแบ่งตามรูปแบบการส่งมอบ แบ่งได้เป็น 2 กลุ่มคือ
+#* [[ซอฟต์แวร์สำเร็จรูป]] (Package software) ซอฟต์แวร์ที่มีการขาย ให้เช่า หรือให้บริการ โดยคิดค่าบริการเป็น transaction หรือ license
+#* [[ซอฟต์แวร์ที่พัฒนาเงินเดือน]] (Outsources software development) เป็นการออกแบบและพัฒนาซอฟต์แวร์เพื่อใช้งานเฉพาะกับงานประเภทต่าง ๆ เฉพาะกิจกรรมไป ส่วนใหญ่ลิขสิทธิ์ของซอฟต์แวร์นี้จะเป็นของผู้ที่ว่าจ้างให้พัฒนาขึ้น
+# การแบ่งตามประเภทของการนำไปใช้งานหลัก แบ่งได้เป็น 3 กลุ่มคือ
+#* [[ซอฟต์แวร์ช่วยในการบริหารจัดการทั่วไป]] (Enterprise software) เป็นซอฟต์แวร์ที่ใช้กับการทำงานเพื่อแก้ปัญหา/จัดการทรัพยากรของ บุคคล/องค์กร เช่น ซอฟต์แวร์บัญชี ซอฟต์แวร์จัดทำเอกสาร เป็นต้น
+#* [[ซอฟต์แวร์สำหรับอุปกรณ์พกพาขนาดเล็ก]] (Mobile applications software) เป็นซอฟต์แวร์ที่ทำงานผ่านระบบปฏิบัติการพิเศษบนอุปกรณ์ขนาดเล็ก เช่น โทรศัพท์มือถือ PDA โดยสามารถแบ่งเป็นกลุ่มใหญ่ ๆ ได้ 2 กลุ่ม คือ (1) ซอฟต์แวร์เพื่อสนับสนุนธุรกรรมทางธุรกิจ (Business applications) เช่น Mobile banking, Mobile payment, GPS on Mobile, Mobile applications for business process management และ(2) ซอฟต์แวร์ที่เกี่ยวข้องกับนันทนาการและบันเทิง (Entertainment applications) ซึ่งรวมเกมบนโทรศัพท์เคลื่อนที่
+#* [[ซอฟต์แวร์สมองกลฝังตัว]] (Embedded System Software) เป็นซอฟต์แวร์ซึ่งฝังอยู่ไว้ในอุปกรณ์อิเล็กทรอนิกส์ต่าง ๆ เพื่อใช้สำหรับควบคุมการทำงานของอุปกรณ์นั้น ๆ เช่น ระบบ GPRS ระบบทำความเย็นอัจริยะ ระบบตรวจสอบย้อนกลับ เป็นต้น
+
+== ซอฟต์แวร์ กับ ไลบรารี ==
+ซอฟต์แวร์แตกต่างกับ[[ไลบรารี]] คือซอฟต์แวร์สามารถนำมาประมวลผลได้ด้วยตัวเอง ในขณะที่ไลบรารีเป็นส่วนประกอบของซอฟต์แวร์และไม่สามารถนำมาใช้ประมวลผลด้วยตนเองได้
+
+== อ้างอิง ==
+{{รายการอ้างอิง}}
+
+== ดูเพิ่ม ==
+* [[อุปกรณ์คอมพิวเตอร์|ฮาร์ดแวร์]]
+* [[วิศวกรรมซอฟต์แวร์]]
+* [[กระด้างภัณฑ์และละมุนภัณฑ์]]
+
+{{software distribution}}
+
+[[หมวดหมู่:ซอฟต์แวร์| ]]
+{{Short description|Instructions a computer can execute}}
+{{For|the TV program|The Computer Programme}}
+[[File:JavaScript_code.png|thumb|[[Source code]] for a computer program written in the [[JavaScript]] language. It demonstrates the <code>appendChild()</code> method. The method adds a new child node to an existing parent node. It is commonly used to dynamically modify the structure of an HTML document.]]
+{{Program execution}}
+
+A '''computer program''' is a [[sequence]] or set{{efn|The [[Prolog]] language allows for a database of facts and rules to be entered in any order. However, a question about a database must be at the very end.}} of instructions in a [[programming language]] for a [[computer]] to [[Execution (computing)|execute]]. It is one component of [[software]], which also includes [[software documentation|documentation]] and other intangible components.<ref name="ISO 2020">{{cite web
+ | title=ISO/IEC 2382:2015
+ | website=ISO
+ | date=2020-09-03
+ | url=https://www.iso.org/obp/ui/#iso:std:iso-iec:2382:ed-1:v1:en
+ | access-date=2022-05-26
+ | quote=[Software includes] all or part of the programs, procedures, rules, and associated documentation of an information processing system.
+ | archive-date=2016-06-17
+ | archive-url=https://web.archive.org/web/20160617031837/https://www.iso.org/obp/ui/#iso:std:iso-iec:2382:ed-1:v1:en
+ | url-status=live
+ }}</ref>
+
+A ''computer program'' in its [[human-readable]] form is called [[source code]]. Source code needs another computer program to execute because computers can only execute their native [[machine instructions]]. Therefore, source code may be [[Translator (computing)|translated]] to machine instructions using a [[compiler]] written for the language. ([[Assembly language]] programs are translated using an [[Assembler (computing)|assembler]].) The resulting file is called an [[executable]]. Alternatively, source code may execute within an [[interpreter (computing)|interpreter]] written for the language.<ref name="cpl_3rd-ch1-7_quoted">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 7
+  | quote = An alternative to compiling a source program is to use an interpreter. An interpreter can directly execute a source program[.]
+  | isbn = 0-201-71012-9
+}}</ref>
+
+If the executable is requested for execution,{{efn|Either the user or another program makes the request.}} then the [[operating system]] [[Loader (computing)|loads]] it into [[Random-access memory|memory]]<ref name="lpi-ch2-p22_quote">{{cite book
+ |title=The Linux Programming Interface
+ |last=Kerrisk
+ |first=Michael
+ |publisher=No Starch Press
+ |year=2010
+ |isbn=978-1-59327-220-3
+ |quote = The kernel can load a new program into memory[.]
+ |page=22}}</ref> and starts a [[Process (computing)|process]].<ref name="osc-ch4-p98_quote">{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 98
+  | quote = Informally, a process is a program in execution.
+  | isbn = 978-0-201-50480-4
+}}</ref> The [[central processing unit]] will soon [[Context switch|switch]] to this process so it can [[Instruction cycle|fetch, decode, and then execute]] each machine instruction.<ref name="sco-ch2-p32">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/32 32]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/32
+  }}</ref>
+
+If the source code is requested for execution, then the operating system loads the corresponding interpreter into memory and starts a process. The interpreter then loads the source code into memory to translate and execute each [[Statement (computer science)|statement]]. Running the source code is slower than running an executable.<ref name="cpl_3rd-ch1-7">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 7
+  | isbn = 0-201-71012-9
+}}</ref>{{efn|An executable has each [[machine instruction]] ready for the [[CPU]].}} Moreover, the interpreter must be installed on the computer.
+
+==Example computer program==
+
+The [["Hello, World!" program]] is used to illustrate a language's basic syntax. The syntax of the language [[Dartmouth BASIC|BASIC]] (1964) was intentionally limited to make the language easy to learn.<ref name="cpl_3rd-ch2-30_quote1">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 30
+  | isbn = 0-201-71012-9
+  | quote = Their intention was to produce a language that was very simple for students to learn[.]
+}}</ref> For example, [[Variable (computer science)|variables]] are not [[Declaration (computer programming)|declared]] before being used.<ref name="cpl_3rd-ch2-31">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 31
+  | isbn = 0-201-71012-9
+}}</ref> Also, variables are automatically initialized to zero.<ref name="cpl_3rd-ch2-31"/> Here is an example computer program, in Basic, to [[average]] a list of numbers:<ref name="cpl_3rd-ch2-30">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 30
+  | isbn = 0-201-71012-9
+}}</ref>
+<syntaxhighlight lang="basic">
+10 INPUT "How many numbers to average?", A
+20 FOR I = 1 TO A
+30 INPUT "Enter number:", B
+40 LET C = C + B
+50 NEXT I
+60 LET D = C/A
+70 PRINT "The average is", D
+80 END
+</syntaxhighlight>
+
+Once the mechanics of basic computer programming are learned, more sophisticated and powerful languages are available to build large computer systems.<ref name="cpl_3rd-ch2-30_quote2">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 30
+  | isbn = 0-201-71012-9
+  | quote = The idea was that students could be merely casual users or go on from Basic to more sophisticated and powerful languages[.]
+}}</ref>
+
+==History==
+{{See also|Computer programming#History|Programmer#History|History of computing|History of programming languages|History of software}}
+
+Improvements in [[software development]] are the result of improvements in [[computer hardware]]. At each stage in hardware's history, the task of [[computer programming]] changed dramatically.
+
+===Analytical Engine===
+[[File:Diagram for the computation of Bernoulli numbers.jpg|thumb|right|Lovelace's description from Note G]]
+In 1837, [[Jacquard machine|Jacquard's loom]] inspired [[Charles Babbage]] to attempt to build the [[Analytical Engine]].<ref name="eniac-ch1-p16">{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/16 16]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/16
+  }}</ref>
+The names of the components of the calculating device were borrowed from the textile industry. In the textile industry, yarn was brought from the store to be milled. The device had a ''store'' which consisted of memory to hold 1,000 numbers of 50 decimal digits each.<ref name="sco-ch1-p14">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/14 14]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/14
+  }}</ref> Numbers from the ''store'' were transferred to the ''mill'' for processing. The engine was programmed using two sets of perforated cards. One set directed the operation and the other set inputted the variables.<ref name="eniac-ch1-p16" /><ref>{{cite journal
+  | first = Allan G.
+  | last = Bromley
+  | author-link = Allan G. Bromley
+  | year = 1998
+  | url = https://profs.scienze.univr.it/~manca/storia-informatica/babbage.pdf
+  | title = Charles Babbage's Analytical Engine, 1838
+  | journal = [[IEEE Annals of the History of Computing]]
+  | volume = 20
+  | number = 4
+  | pages = 29–45
+  | doi = 10.1109/85.728228
+  | bibcode = 1998IAHC...20d..29B
+ | s2cid = 2285332
+  | access-date = 2015-10-30
+  | archive-date = 2016-03-04
+  | archive-url = https://web.archive.org/web/20160304081812/http://profs.scienze.univr.it/~manca/storia-informatica/babbage.pdf
+  | url-status = live
+  }}</ref> However, the thousands of cogged wheels and gears never fully worked together.<ref name="sco-ch1-p15">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/15 15]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/15
+  }}</ref>
+
+[[Ada Lovelace]] worked for Charles Babbage to create a description of the Analytical Engine (1843).<ref>{{citation
+ |author1 = J. Fuegi
+ |author2 =J. Francis
+ |title = Lovelace & Babbage and the creation of the 1843 'notes'
+ |journal = Annals of the History of Computing
+ |volume = 25
+ |issue = 4
+ |date=October–December 2003
+ |doi = 10.1109/MAHC.2003.1253887
+ |pages = 16, 19, 25
+ |bibcode =2003IAHC...25d..16F
+ }}</ref> The description contained Note G which completely detailed a method for calculating [[Bernoulli number]]s using the Analytical Engine. This note is recognized by some historians as the world's first ''computer program''.<ref name="sco-ch1-p15"/>
+
+===Universal Turing machine===
+[[File:Universal Turing machine.svg|350px|right]]
+In 1936, [[Alan Turing]] introduced the [[Universal Turing machine]], a theoretical device that can model every computation.<ref name="discrete-ch10-p654">{{cite book
+  | last = Rosen
+  | first = Kenneth H.
+  | title = Discrete Mathematics and Its Applications
+  | publisher = McGraw-Hill, Inc.
+  | year = 1991
+  | page = [https://archive.org/details/discretemathemat00rose/page/654 654]
+  | isbn = 978-0-07-053744-6
+  | url = https://archive.org/details/discretemathemat00rose/page/654
+  | quote = Turing machines can model all the computations that can be performed on a computing machine.
+  }}</ref>
+It is a [[finite-state machine]] that has an infinitely long read/write tape. The machine can move the tape back and forth, changing its contents as it performs an [[algorithm]]. The machine starts in the initial state, goes through a sequence of steps, and halts when it encounters the halt state.<ref name="formal_languages-ch9-p234">{{cite book
+  | last = Linz
+  | first = Peter
+  | title = An Introduction to Formal Languages and Automata
+  | publisher = D. C. Heath and Company
+  | year = 1990
+  | page = 234
+  | isbn = 978-0-669-17342-0
+}}</ref> All present-day computers are [[Turing complete]].<ref name="formal_languages-ch9-p243">{{cite book
+  | last = Linz
+  | first = Peter
+  | title = An Introduction to Formal Languages and Automata
+  | publisher = D. C. Heath and Company
+  | year = 1990
+  | page = 243
+  | isbn = 978-0-669-17342-0
+  | quote = [A]ll the common mathematical functions, no matter how complicated, are Turing-computable.
+}}</ref>
+
+===ENIAC===
+[[File:ENIAC-changing_a_tube.jpg|thumb|right|Glenn A. Beck changing a tube in ENIAC]]
+The [[Electronic Numerical Integrator And Computer]] (ENIAC) was built between July 1943 and Fall 1945. It was a Turing complete, general-purpose computer that used 17,468 [[vacuum tube]]s to create the [[Electronic circuit|circuits]]. At its core, it was a series of [[Pascaline]]s wired together.<ref name="eniac-ch5-p102">{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/102 102]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/102
+  }}</ref> Its 40 units weighed 30 tons, occupied {{convert|1,800|sqft|m2|0}}, and consumed $650 per hour ([[Inflation|in 1940s currency]]) in electricity when idle.<ref name="eniac-ch5-p102" /> It had 20 [[base-10]] [[Accumulator (computing)|accumulators]]. Programming the ENIAC took up to two months.<ref name="eniac-ch5-p102" /> Three function tables were on wheels and needed to be rolled to fixed function panels. Function tables were connected to function panels by plugging heavy black cables into [[plugboard]]s. Each function table had 728 rotating knobs. Programming the ENIAC also involved setting some of the 3,000 switches. Debugging a program took a week.<ref name="eniac-ch5-p94">{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/94 94]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/94
+  }}</ref> It ran from 1947 until 1955 at [[Aberdeen Proving Ground]], calculating hydrogen bomb parameters, predicting weather patterns, and producing firing tables to aim artillery guns.<ref name="eniac-ch5-p107">{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/107 107]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/107
+  }}</ref>
+
+===Stored-program computers===
+Instead of plugging in cords and turning switches, a [[stored-program computer]] loads its instructions into [[Random-access memory|memory]] just like it loads its data into memory.<ref name="eniac-ch6-p120">{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/120 120]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/120
+  }}</ref> As a result, the computer could be programmed quickly and perform calculations at very fast speeds.<ref name="eniac-ch6-p118">{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/118 118]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/118
+  }}</ref> [[Presper Eckert]] and [[John Mauchly]] built the ENIAC. The two engineers introduced the ''stored-program concept'' in a three-page memo dated February 1944.<ref name="eniac-ch6-p119">{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/119 119]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/119
+  }}</ref> Later, in September 1944, [[John von Neumann]] began working on the ENIAC project. On June 30, 1945, von Neumann published the ''[[First Draft of a Report on the EDVAC]]'', which equated the structures of the computer with the structures of the human brain.<ref name="eniac-ch6-p118"/> The design became known as the [[von Neumann architecture]]. The architecture was simultaneously deployed in the constructions of the [[EDVAC]] and [[EDSAC]] computers in 1949.<ref name="eniac-ch6-p123">{{cite book
+  | last = McCartney
+  | first = Scott
+  | title = ENIAC – The Triumphs and Tragedies of the World's First Computer
+  | publisher = Walker and Company
+  | year = 1999
+  | page = [https://archive.org/details/eniac00scot/page/123 123]
+  | isbn = 978-0-8027-1348-3
+  | url = https://archive.org/details/eniac00scot/page/123
+  }}</ref><ref>{{Citation |last=Huskey |first=Harry D. |title=EDVAC |date=2003-01-01 |encyclopedia=Encyclopedia of Computer Science |pages=626–628 |url=https://dl.acm.org/doi/10.5555/1074100.1074362 |access-date=2025-04-25 |place=GBR |publisher=John Wiley and Sons Ltd. |isbn=978-0-470-86412-8}}</ref>
+
+The [[IBM System/360]] (1964) was a family of computers, each having the same [[instruction set architecture]]. The [[IBM System/360 Model 20|Model 20]] was the smallest and least expensive. Customers could upgrade and retain the same [[application software]].<ref name="sco-ch1-p21">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/n42 21]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane
+  | url-access = registration
+  }}</ref> The [[IBM System/360 Model 195|Model 195]] was the most premium.  Each System/360 model featured [[multiprogramming]]<ref name="sco-ch1-p21"/>—having multiple [[Process (computing)|processes]] in [[random-access memory|memory]] at once. When one process was waiting for [[input/output]], another could compute.
+
+IBM planned for each model to be programmed using [[PL/I]].<ref name="cpl_3rd-ch2-27">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 27
+  | isbn = 0-201-71012-9
+}}</ref> A committee was formed that included [[COBOL]], [[FORTRAN]] and [[ALGOL]] programmers. The purpose was to develop a language that was comprehensive, easy to use, extendible, and would replace COBOL and FORTRAN.<ref name="cpl_3rd-ch2-27"/> The result was a large and complex language that took a long time to [[compile]].<ref name="cpl_3rd-ch2-29">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 29
+  | isbn = 0-201-71012-9
+}}</ref>
+
+[[File:Dg-nova3.jpg|thumb|Switches for manual input on a [[Data General Nova]] 3, manufactured in the mid-1970s]]
+Computers manufactured until the 1970s had front-panel switches for manual programming.<ref name="osc-ch1-p6">{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 6
+  | isbn = 978-0-201-50480-4
+}}</ref> The computer program was written on paper for reference. An instruction was represented by a configuration of on/off settings. After setting the configuration, an execute button was pressed. This process was then repeated. Computer programs also were automatically inputted via [[paper tape]], [[punched cards]] or [[9-track tape|magnetic-tape]]. After the medium was loaded, the starting address was set via switches, and the execute button was pressed.<ref name="osc-ch1-p6"/>
+
+===Very Large Scale Integration===
+[[Image:Diopsis.jpg|thumb|right|A VLSI integrated-circuit [[die (integrated circuit)|die]] ]]
+A major milestone in software development was the invention of the [[Very Large Scale Integration]] (VLSI) circuit.
+
+[[Robert Noyce]], co-founder of [[Fairchild Semiconductor]] (1957) and [[Intel]] (1968), achieved a technological improvement to refine the [[Semiconductor device fabrication|production]] of [[field-effect transistor]]s (1959).<ref name="digital_age">{{cite book
+ | url=https://books.google.com/books?id=UUbB3d2UnaAC&pg=PA46
+ | title=To the Digital Age: Research Labs, Start-up Companies, and the Rise of MOS
+ | publisher=Johns Hopkins University Press
+ | year=2002
+ | isbn=9780801886393
+ | access-date=February 3, 2022
+ | archive-date=February 2, 2023
+ | archive-url=https://web.archive.org/web/20230202181649/https://books.google.com/books?id=UUbB3d2UnaAC&pg=PA46
+ | url-status=live
+ }}</ref> The goal is to alter the [[electrical resistivity and conductivity]] of a [[semiconductor junction]]. First, naturally occurring [[silicate minerals]] are converted into [[polysilicon]] rods using the [[Siemens process]].<ref name="osti">{{cite web
+ | url=https://www.osti.gov/servlets/purl/1497235
+ | title=Manufacturing of Silicon Materials for Microelectronics and Solar PV
+ | publisher=Sandia National Laboratories
+ | year=2017
+ | access-date=February 8, 2022
+ | last1=Chalamala
+ | first1=Babu
+ | archive-date=March 23, 2023
+ | archive-url=https://web.archive.org/web/20230323163602/https://www.osti.gov/biblio/1497235
+ | url-status=live
+ }}</ref> The [[Czochralski process]] then converts the rods into a [[monocrystalline silicon]], [[Boule (crystal)|boule crystal]].<ref name="britannica_wafer">{{cite web
+ | url=https://www.britannica.com/technology/integrated-circuit/Fabricating-ICs#ref837156
+ | title=Fabricating ICs Making a base wafer
+ | publisher=Britannica
+ | access-date=February 8, 2022
+ | archive-date=February 8, 2022
+ | archive-url=https://web.archive.org/web/20220208103132/https://www.britannica.com/technology/integrated-circuit/Fabricating-ICs#ref837156
+ | url-status=live
+ }}</ref> The [[crystal]] is then thinly sliced to form a [[Wafer (electronics)|wafer]] [[Substrate (materials science)|substrate]]. The [[planar process]] of [[photolithography]] then ''integrates'' unipolar transistors, [[capacitor]]s, [[diode]]s, and [[resistor]]s<ref name="computerhistory1959">{{cite web
+ |title=1959: Practical Monolithic Integrated Circuit Concept Patented
+ |url=https://www.computerhistory.org/siliconengine/practical-monolithic-integrated-circuit-concept-patented/
+ |website=[[Computer History Museum]]
+ |access-date=13 August 2019}}</ref> onto the wafer to build a matrix of [[metal–oxide–semiconductor]] (MOS) transistors. The MOS transistor is the primary component in ''integrated circuit chips''.<ref name="digital_age"/>
+
+Originally, [[integrated circuit]] chips had their function set during manufacturing. Chip makers designed custom chips for specific applications.<ref name="silicon_pg_97_quoted">{{cite book
+  | last = Faggin
+  | first = Federico
+  | title = Silicon
+  | publisher = Waterside Productions
+  | year = 2021
+  | page = 97
+  | quote = In 1972, Vadasz abruptly told me he had hired someone to run Intel's custom chip business ...
+  | isbn = 978-1-949003-41-3
+}}</ref>
+
+In 1969, [[Busicom]], a Japanese calculator company, contracted with [[Intel]] to manufacture 12 integrated circuit chips, each for a specific calculator function. [[Ted Hoff]], the engineer tasked with the assignment, realized he could build one chip that could execute ''computer programs'' to perform the 12 calculator functions.<ref name="chip_war_pg_70_quoted">{{cite book
+  | last = Miller
+  | first = Christopher
+  | title = Chip War
+  | publisher = Simon & Schuster, LLC
+  | year = 2022
+  | page = 70
+  | quote = Hoff bet it would soon be cheaper to design a standardized logic chip that, coupled with a powerful memory chip [and] programmed with different types of software, could compute many different things.
+  | isbn = 978-1-9821-7200-8
+}}</ref>
+The resulting chip was called the [[Intel 4004]] [[microprocessor]].
+
+[[Image:Slt1.jpg|thumb|right|IBM's System/360 (1964) CPU was not a microprocessor.]]
+The terms ''microprocessor'' and [[central processing unit]] (CPU) are now used interchangeably. However, CPUs predate microprocessors. For example, the [[IBM System/360]] (1964) had a CPU made from [[IBM Solid Logic Technology|circuit boards containing discrete components on ceramic substrates]].<ref name="ibm_360">{{cite web
+ | url=https://www.computer-museum.ru/books/archiv/ibm36040.pdf |archive-url=https://ghostarchive.org/archive/20221010/https://www.computer-museum.ru/books/archiv/ibm36040.pdf |archive-date=2022-10-10 |url-status=live
+ | title=360 Revolution
+ | publisher=Father, Son & Co.
+ | year=1990
+ | access-date=February 5, 2022
+ }}</ref>
+
+===x86 series===
+[[File:IBM_PC-IMG_7271_(transparent).png|thumb|right|The original [[IBM Personal Computer]] (1981) used an Intel 8088 microprocessor.]]
+In 1978, the modern software development environment began when Intel upgraded the [[Intel 8080]] to the [[Intel 8086]]. Intel simplified the Intel 8086 to manufacture the cheaper [[Intel 8088]].<ref name="infoworld_8-23-82">{{cite web
+ | url=https://books.google.com/books?id=VDAEAAAAMBAJ&pg=PA22
+ | title=Bill Gates, Microsoft and the IBM Personal Computer
+ | publisher=InfoWorld
+ | date=August 23, 1982
+ | access-date=1 February 2022
+ | archive-date=18 February 2023
+ | archive-url=https://web.archive.org/web/20230218183644/https://books.google.com/books?id=VDAEAAAAMBAJ&pg=PA22
+ | url-status=live
+ }}</ref> [[IBM]] embraced the Intel 8088 when they entered the [[personal computer]] market (1981). As [[consumer]] [[demand]] for personal computers increased, so did Intel's microprocessor development. The succession of development is known as the [[x86|x86 series]]. The [[x86 assembly language]] is a family of [[backward-compatible]] [[machine instruction]]s. Machine instructions created in earlier microprocessors were retained throughout microprocessor upgrades. This enabled consumers to purchase new computers without having to purchase new [[application software]].  The major categories of instructions are:{{efn|For more information, visit [[X86 assembly language#Instruction types]].}}
+* Memory instructions to set and access numbers and [[String (computer science)|strings]] in [[random-access memory]].
+* Integer [[arithmetic logic unit]] (ALU) instructions to perform the primary arithmetic operations on [[integers]].
+* Floating point ALU instructions to perform the primary arithmetic operations on [[real number]]s.
+* [[Call stack]] instructions to push and pop [[Word (computer architecture)|words]] needed to allocate memory and interface with [[Function (computer programming)|functions]].
+* [[Single instruction, multiple data]] (SIMD) instructions{{efn|introduced in 1999}} to increase speed when multiple processors are available to perform the same [[algorithm]] on an [[Array data structure|array of data]].
+
+===Changing programming environment===
+[[File:DEC VT100 terminal transparent.png|thumb|right|The [[Digital Equipment Corporation|DEC]] [[VT100]] (1978) was a widely used [[computer terminal]].]]
+VLSI circuits enabled the [[programming environment]] to advance from a [[computer terminal]] (until the 1990s) to a [[graphical user interface]] (GUI) computer. Computer terminals limited programmers to a single [[Shell (computing)|shell]] running in a [[command-line interface|command-line environment]]. During the 1970s, full-screen source code editing became possible through a [[text-based user interface]]. Regardless of the technology available, the goal is to program in a [[programming language]].
+
+==Programming paradigms and languages==
+
+Programming language features exist to provide building blocks to be combined to express programming ideals.<ref name="stroustrup-ch1-10">{{cite book
+  | last = Stroustrup
+  | first = Bjarne
+  | title = The C++ Programming Language, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 2013
+  | page = 10
+  | isbn = 978-0-321-56384-2
+}}</ref> Ideally, a programming language should:<ref name="stroustrup-ch1-10"/>
+* express ideas directly in the code.
+* express independent ideas independently.
+* express relationships among ideas directly in the code.
+* combine ideas freely.
+* combine ideas only where combinations make sense.
+* express simple ideas simply.
+
+The [[programming style]] of a programming language to provide these building blocks may be categorized into [[programming paradigm]]s.<ref name="stroustrup-ch1-11">{{cite book
+  | last = Stroustrup
+  | first = Bjarne
+  | title = The C++ Programming Language, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 2013
+  | page = 11
+  | isbn = 978-0-321-56384-2
+}}</ref> For example, different paradigms may differentiate:<ref name="stroustrup-ch1-11"/>
+* [[Procedural programming|procedural languages]], [[functional language]]s, and [[Logic programming|logical languages]].
+* different levels of [[data abstraction]].
+* different levels of [[class hierarchy]].
+* different levels of input [[datatypes]], as in [[Container (abstract data type)|container types]] and [[generic programming]].
+Each of these programming styles has contributed to the synthesis of different ''programming languages''.<ref name="stroustrup-ch1-11"/>
+
+A ''programming language'' is a set of [[Reserved word|keywords]], [[Character (computing)|symbols]], [[Identifier (computer languages)|identifiers]], and rules by which programmers can communicate instructions to the computer.<ref name="pis-ch4-p159">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 159
+  | isbn = 0-619-06489-7
+}}</ref> They follow a set of rules called a [[Syntax (programming languages)|syntax]].<ref name="pis-ch4-p159"/>
+
+* ''Keywords'' are reserved words to form [[Declaration (computer programming)|declarations]] and [[Statement (computer science)|statements]].
+* ''Symbols'' are characters to form [[Operation (mathematics)|operations]], [[Assignment (computer science)|assignments]], [[control flow]], and [[delimiter]]s.
+* ''Identifiers'' are words created by programmers to form [[Constant (computer programming)|constants]], [[Variable (computer science)|variable names]], [[Record (computer science)|structure names]], and [[Function (computer programming)|function names]].
+* ''Syntax Rules'' are defined in the [[Backus–Naur form]].
+
+''Programming languages'' get their basis from [[formal language]]s.<ref name="fla-ch1-p2">{{cite book
+  | last = Linz
+  | first = Peter
+  | title = An Introduction to Formal Languages and Automata
+  | publisher = D. C. Heath and Company
+  | year = 1990
+  | page = 2
+  | isbn = 978-0-669-17342-0
+}}</ref> The purpose of defining a solution in terms of its ''formal language'' is to generate an [[algorithm]] to solve the underlining problem.<ref name="fla-ch1-p2"/> An ''algorithm'' is a sequence of simple instructions that solve a problem.<ref name="dsa-ch2-p29">{{cite book
+  | last = Weiss
+  | first = Mark Allen
+  | title = Data Structures and Algorithm Analysis in C++
+  | publisher = Benjamin/Cummings Publishing Company, Inc.
+  | year = 1994
+  | page = 29
+  | isbn = 0-8053-5443-3
+}}</ref>
+
+===Generations of programming language===
+{{Main|Programming language generations}}
+[[File:W65C816S Machine Code Monitor.jpeg|thumb|[[Machine language]] monitor on a [[W65C816S]] [[microprocessor]] ]]
+The evolution of programming languages began when the [[EDSAC]] (1949) used the first [[Stored-program computer|stored computer program]]<ref name="babbage_quote1">{{cite book
+  | last = Dasgupta
+  | first = Subrata
+  | title = It Began with Babbage -- The Genesis of Computer Science
+  | publisher = Oxford University Press
+  | year = 2014
+  | isbn = 978-0-19-930941-2
+  | quote = It [the EDSAC project] opened up an entirely new region of the stored-program computer paradigm, a new class of artifacts the likes of which had never been seen before: computer-programs or software.
+  }}</ref> in its [[von Neumann architecture]]. Programming the EDSAC was in the first [[Programming language generations|generation of programming language]].<ref name="sco-ch1-p17_quote">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/17 17]
+  | isbn = 978-0-13-854662-5
+  | quote = His [John von Neumann] basic design, now known as a von Neumann machine, was used in the EDSAC, the first stored program computer, and is still the basis for nearly all digital computers, even now, almost half a century later. ... Each word held either two 20-bit instructions [a stored program] or a 39-bit signed integer.
+  | url = https://archive.org/details/structuredcomput00tane/page/17
+  }}</ref>
+
+* The [[first-generation programming language|first generation of programming language]] is [[machine language]].<ref name="pis-ch4-p160_quote">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 160
+  | quote = The first generation of programming languages is machine language, which requires the use of binary symbols (0s and 1s).
+  | isbn = 0-619-06489-7
+}}</ref> ''Machine language'' requires the programmer to enter instructions using ''instruction numbers'' called [[machine code]]. For example, the ADD operation on the [[PDP-11 architecture|PDP-11]] has instruction number 24576.<ref name="sco-ch7-p399_quote">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/399 399]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/399
+  | quote = Most people can remember that the abbreviations for add, subtract, multiply, and divide are ADD, SUB, MUL, and DIV, but few can remember that the machine instructions (for the PDP-11) are 24576, 57344, 28672, and 29184.
+  }}</ref>{{efn|Whereas this is a decimal number, PDP-11 code is always expressed as [[octal]].}}
+
+* The [[second-generation programming language|second generation of programming language]] is [[assembly language]].<ref name="pis-ch4-p160">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 160
+  | isbn = 0-619-06489-7
+}}</ref> ''Assembly language'' allows the programmer to use [[Assembly language#Mnemonics|mnemonic]] [[Instruction set architecture#Instructions|instructions]] instead of remembering instruction numbers. An [[Assembler (computing)|assembler]] translates each assembly language mnemonic into its machine language number. For example, on the PDP-11, the operation 24576 can be referenced as ADD R0,R0 in the source code.<ref name="sco-ch7-p399">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/399 399]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/399
+  }}</ref> The four basic arithmetic operations have assembly instructions like ADD, SUB, MUL, and DIV.<ref name="sco-ch7-p399"/> Assemblers also have instructions like DW (Define [[Word (computer architecture)|Word]]) to reserve [[Random-access memory|memory]] cells. Then the MOV instruction can copy [[integer]]s between [[Processor register|registers]] and those memory cells.
+
+:* The basic structure of an assembly language statement is a label, [[Operation (mathematics)|operation]], [[operand]], and comment.<ref name="sco-ch7-p400">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/400 400]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/400
+  }}</ref>
+::* ''Labels'' allow the programmer to work with [[Variable (computer science)|variable names]]. The assembler will later translate labels into physical [[memory address]]es.
+::* ''Operations'' allow the programmer to work with mnemonics.
+::* ''Operands'' tell the assembler which data the operation will process. The assembler will later translate mnemonics and operands into instruction numbers.
+::* ''Comments'' allow the programmer to articulate a narrative because the instructions alone may be opaque to humans.
+:: The key characteristic of an assembly language program is it forms a one-to-one mapping to its corresponding machine language target.<ref name="sco-ch7-p398">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Third Edition
+  | publisher = Prentice Hall
+  | year = 1990
+  | page = [https://archive.org/details/structuredcomput00tane/page/398 398]
+  | isbn = 978-0-13-854662-5
+  | url = https://archive.org/details/structuredcomput00tane/page/398
+  }}</ref>
+
+* The [[third-generation programming language|third generation of programming language]] uses [[compiler]]s and [[Interpreter (computing)|interpreters]] to execute computer programs. The distinguishing feature of a ''third generation'' language is its independence from particular hardware.<ref name="cpl_3rd-ch2-26">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 26
+  | isbn = 0-201-71012-9
+}}</ref> Early languages include [[Fortran|FORTAN]] (1958), [[COBOL]] (1959), [[ALGOL]] (1960), and [[BASIC]] (1964).<ref name="pis-ch4-p160"/> In 1973, the [[C programming language]] emerged as a [[high-level language]] that produced efficient machine language instructions.<ref name="cpl_3rd-ch2-37">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 37
+  | isbn = 0-201-71012-9
+}}</ref> Whereas ''third-generation'' languages historically generated many machine instructions for each statement,<ref name="pis-ch4-p160_quote1">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 160
+  | isbn = 0-619-06489-7
+  | quote = With third-generation and higher-level programming languages, each statement in the language translates into several instructions in machine language.
+}}</ref> C has statements that may generate a single machine instruction.{{efn|[[Operators in C and C++|Operators]] like <code>x++</code> will usually compile to a single instruction.}} Moreover, an [[optimizing compiler]] might overrule the programmer and produce fewer machine instructions than statements. Today, an entire [[programming paradigm|paradigm]] of languages fill the [[imperative programming|imperative]], ''third generation'' spectrum.
+
+* The [[fourth-generation programming language|fourth generation of programming language]] emphasizes what output results are desired, rather than how programming statements should be constructed.<ref name="pis-ch4-p160"/> [[Declarative language]]s attempt to limit [[Side effect (computer science)|side effects]] and allow programmers to write code with relatively few errors.<ref name="pis-ch4-p160"/> One popular ''fourth generation'' language is called [[Structured Query Language]] (SQL).<ref name="pis-ch4-p160"/> [[Database]] developers no longer need to process each database record one at a time. Also, a simple [[Select (SQL)|select statement]] can generate output records without having to understand how they are retrieved.
+
+===Imperative languages===
+{{main|Imperative programming}}
+
+[[File:Object-Oriented-Programming-Methods-And-Classes-with-Inheritance.png|thumb|A computer program written in an imperative language]]
+''Imperative languages'' specify a sequential [[algorithm#Computer algorithm|algorithm]] using [[Declaration (computer programming)|declarations]], [[Expression (computer science)|expressions]], and [[Statement (computer science)|statements]]:<ref name="cpl-ch4-75">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Second Edition
+  | publisher = Addison-Wesley
+  | year = 1993
+  | page = 75
+  | isbn = 978-0-201-56885-1
+}}</ref>
+* A ''declaration'' introduces a [[variable (programming)|variable]] name to the ''computer program'' and assigns it to a [[datatype]]<ref name="stroustrup-ch2-40">{{cite book
+  | last = Stroustrup
+  | first = Bjarne
+  | title = The C++ Programming Language, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 2013
+  | page = 40
+  | isbn = 978-0-321-56384-2
+}}</ref> – for example: <code>var x: integer;</code>
+* An ''expression'' yields a value – for example: <code>2 + 2</code> yields 4
+* A ''statement'' might [[Assignment (computer science)|assign]] an expression to a variable or use the value of a variable to alter the program's [[control flow]] – for example: <code>x := 2 + 2; [[Conditional_(computer_programming)#If–then(–else)|if]] x = 4 then do_something();</code>
+
+====Fortran====
+[[FORTRAN]] (1958) was unveiled as "The IBM Mathematical FORmula TRANslating system". It was designed for scientific calculations, without [[String (computer science)|string]] handling facilities. Along with [[Declaration (computer programming)|declarations]], [[Expression (computer science)|expressions]], and [[Statement (computer science)|statements]], it supported:
+* [[Array data structure|arrays]].
+* [[Function (computer programming)#Jump to subroutine|subroutines]].
+* [[For loop#1957: FORTRAN|"do" loops]].
+
+It succeeded because:
+* programming and debugging costs were below computer running costs.
+* it was supported by IBM.
+* applications at the time were scientific.<ref name="cpl_3rd-ch2-16">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 16
+  | isbn = 0-201-71012-9
+}}</ref>
+
+However, non-IBM vendors also wrote Fortran compilers, but with a syntax that would likely fail IBM's compiler.<ref name="cpl_3rd-ch2-16"/> The [[American National Standards Institute]] (ANSI) developed the first Fortran standard in 1966. In 1978, Fortran 77 became the standard until 1991. Fortran 90 supports:
+* [[Record (computer science)|records]].
+* [[Pointer (computer programming)|pointers]] to arrays.
+
+====COBOL====
+[[COBOL]] (1959) stands for "COmmon Business Oriented Language". Fortran manipulated symbols. It was soon realized that symbols did not need to be numbers, so [[String (computer science)|strings]] were introduced.<ref name="cpl_3rd-ch2-24">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 24
+  | isbn = 0-201-71012-9
+}}</ref> The [[US Department of Defense]] influenced COBOL's development, with [[Grace Hopper]] being a major contributor. The statements were English-like and verbose. The goal was to design a language so managers could read the programs. However, the lack of structured statements hindered this goal.<ref name="cpl_3rd-ch2-25">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 25
+  | isbn = 0-201-71012-9
+}}</ref>
+
+COBOL's development was tightly controlled, so dialects did not emerge to require ANSI standards. As a consequence, it was not changed for 15 years until 1974. The 1990s version did make consequential changes, like [[object-oriented programming]].<ref name="cpl_3rd-ch2-25"/>
+
+====Algol====
+[[ALGOL]] (1960) stands for "ALGOrithmic Language". It had a profound influence on programming language design.<ref name="cpl_3rd-ch2-19">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 19
+  | isbn = 0-201-71012-9
+}}</ref> Emerging from a committee of European and American programming language experts, it used standard [[mathematical notation]] and had a readable, structured design. Algol was first to define its syntax using the [[Backus–Naur form]].<ref name="cpl_3rd-ch2-19"/> This led to [[Syntax-directed translation|syntax-directed]] compilers. It added features like:
+* [[Block (programming)|block structure]], where variables were local to their block.
+* arrays with variable bounds.
+* [[For loop|"for" loops]].
+* [[Function (computer programming)|functions]].
+* [[Recursion (computer science)|recursion]].<ref name="cpl_3rd-ch2-19"/>
+
+Algol's direct descendants include [[Pascal (programming language)|Pascal]], [[Modula-2]], [[Ada (programming language)|Ada]], [[Delphi (software)|Delphi]] and [[Oberon (programming language)|Oberon]] on one branch. On another branch the descendants include [[C (programming language)|C]], [[C++]] and [[Java (programming language)|Java]].<ref name="cpl_3rd-ch2-19"/>
+
+====Basic====
+[[BASIC]] (1964) stands for "Beginner's All-Purpose Symbolic Instruction Code". It was developed at [[Dartmouth College]] for all of their students to learn.<ref name="cpl_3rd-ch2-30"/> If a student did not go on to a more powerful language, the student would still remember Basic.<ref name="cpl_3rd-ch2-30"/> A Basic interpreter was installed in the [[microcomputers]] manufactured in the late 1970s. As the microcomputer industry grew, so did the language.<ref name="cpl_3rd-ch2-30"/>
+
+Basic pioneered the [[Read–eval–print loop|interactive session]].<ref name="cpl_3rd-ch2-30"/> It offered [[operating system]] commands within its environment:
+* The 'new' command created an empty slate.
+* Statements evaluated immediately.
+* Statements could be programmed by preceding them with line numbers.{{efn|The line numbers were typically incremented by 10 to leave room if additional statements were added later.}}
+* The 'list' command displayed the program.
+* The 'run' command executed the program.
+
+However, the Basic syntax was too simple for large programs.<ref name="cpl_3rd-ch2-30"/> Recent dialects added structure and object-oriented extensions. [[Microsoft]]'s [[Visual Basic]] is still widely used and produces a [[graphical user interface]].<ref name="cpl_3rd-ch2-31"/>
+
+====C====
+[[C programming language]] (1973) got its name because the language [[BCPL]] was replaced with [[B (programming language)|B]], and [[AT&T Bell Labs]] called the next version "C". Its purpose was to write the [[UNIX]] [[operating system]].<ref name="cpl_3rd-ch2-37"/> C is a relatively small language, making it easy to write compilers. Its growth mirrored the hardware growth in the 1980s.<ref name="cpl_3rd-ch2-37"/> Its growth also was because it has the facilities of [[assembly language]], but it uses a [[High-level programming language|high-level syntax]]. It added advanced features like:
+* [[inline assembler]]
+* arithmetic on pointers
+* pointers to functions
+* bit operations
+* freely combining complex [[Operators in C and C++|operators]]<ref name="cpl_3rd-ch2-37"/>
+
+[[File:Computer-memory-map.png|thumb|right|Computer memory map]]
+''C'' allows the programmer to control which region of memory data is to be stored. [[Global variable]]s and [[static variable]]s require the fewest [[clock cycle]]s to store. The [[call stack|stack]] is automatically used for the standard variable [[Declaration (computer programming)|declarations]]. [[Manual memory management|Heap]] memory is returned to a [[pointer variable]] from the [[C dynamic memory allocation|<code>malloc()</code>]] function.
+
+* The ''global and static data'' region is located just above the ''program'' region. (The program region is technically called the ''text'' region. It is where machine instructions are stored.)
+:* The global and static data region is technically two regions.<ref name="geeksforgeeks">{{cite web
+| url = https://www.geeksforgeeks.org/memory-layout-of-c-program/
+| title = Memory Layout of C Programs
+| date = 12 September 2011
+| access-date = 6 November 2021
+| archive-date = 6 November 2021
+| archive-url = https://web.archive.org/web/20211106175644/https://www.geeksforgeeks.org/memory-layout-of-c-program/
+| url-status = live
+}}</ref> One region is called the ''initialized [[data segment]]'', where variables declared with default values are stored. The other region is called the ''[[.bss|block started by segment]]'', where variables declared without default values are stored.
+:* Variables stored in the ''global and static data'' region have their [[Memory address|addresses]] set at compile time. They retain their values throughout the life of the process.
+
+:* The global and static region stores the ''global variables'' that are declared on top of (outside) the <code>main()</code> function.<ref name="cpl-ch1-p31">{{cite book
+ |title=The C Programming Language Second Edition
+ |last1=Kernighan
+ |first1=Brian W.
+ |last2=Ritchie
+ |first2=Dennis M.
+ |publisher=Prentice Hall
+ |year=1988
+ |isbn=0-13-110362-8
+ |page=31}}</ref> Global variables are visible to <code>main()</code> and every other function in the source code.
+
+: On the other hand, variable declarations inside of <code>main()</code>, other functions, or within <code>{</code> <code>}</code> [[Block (programming)|block delimiters]] are ''local variables''. Local variables also include ''[[formal parameter]] variables''. Parameter variables are enclosed within the parenthesis of a function definition.<ref name="cpl_3rd-ch6-128">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 128
+  | isbn = 0-201-71012-9
+}}</ref> Parameters provide an [[Interface (computing)|interface]] to the function.
+
+:* ''Local variables'' declared using the <code>static</code> prefix are also stored in the ''global and static data'' region.<ref name="geeksforgeeks"/> Unlike global variables, static variables are only visible within the function or block. Static variables always retain their value. An example usage would be the following function:{{efn|This function could be written more concisely as
+<syntaxhighlight lang="c">
+int increment_counter() {
+    static int counter;
+    return ++counter;
+}
+</syntaxhighlight>
+
+Static variables are automatically initialized to zero. <code>++counter</code> is a prefix [[increment operator]].}}
+
+<syntaxhighlight lang="c">
+int increment_counter() {
+    static int counter = 0;
+    counter++;
+    return counter;
+}
+</syntaxhighlight>
+
+* The [[call stack|stack]] region is a contiguous block of memory located near the top memory address.<ref name="lpi-ch6-p121">{{cite book
+ |title=The Linux Programming Interface
+ |last=Kerrisk
+ |first=Michael
+ |publisher=No Starch Press
+ |year=2010
+ |isbn=978-1-59327-220-3
+ |page=121}}</ref> Variables placed in the stack are populated from top to bottom.{{efn|This is despite the metaphor of a ''stack,'' which normally grows from bottom to top.}}<ref name="lpi-ch6-p121"/> A [[Call stack#STACK-POINTER|stack pointer]] is a special-purpose [[processor register|register]] that keeps track of the last memory address populated.<ref name="lpi-ch6-p121"/> Variables are placed into the stack via the ''assembly language'' PUSH instruction. Therefore, the addresses of these variables are set during [[Runtime (program lifecycle phase)|runtime]]. The method for stack variables to lose their [[Scope (computer science)|scope]] is via the POP instruction.
+
+:* ''Local variables'' declared without the <code>static</code> prefix, including formal parameter variables,<ref name="lpi-ch6-p122">{{cite book
+ |title=The Linux Programming Interface
+ |last=Kerrisk
+ |first=Michael
+ |publisher=No Starch Press
+ |year=2010
+ |isbn=978-1-59327-220-3
+ |page=122}}</ref> are called ''automatic variables''<ref name="cpl-ch1-p31"/> and are stored in the stack.<ref name="geeksforgeeks"/> They are visible inside the function or block and lose their scope upon exiting the function or block.
+
+* The [[Manual memory management|heap]] region is located below the stack.<ref name="geeksforgeeks"/> It is populated from the bottom to the top. The [[operating system]] manages the heap using a ''heap pointer'' and a list of allocated memory blocks.<ref name="cpl-ch1-p185">{{cite book
+ |title=The C Programming Language Second Edition
+ |last1=Kernighan
+ |first1=Brian W.
+ |last2=Ritchie
+ |first2=Dennis M.
+ |publisher=Prentice Hall
+ |year=1988
+ |isbn=0-13-110362-8
+ |page=185}}</ref> Like the stack, the addresses of heap variables are set during runtime. An [[out of memory]] error occurs when the heap pointer and the stack pointer meet.
+
+:* ''C'' provides the <code>malloc()</code> library function to [[C dynamic memory allocation|allocate]] heap memory.{{efn|''C'' also provides the <code>calloc()</code> function to allocate heap memory. It provides two additional services: 1) It allows the programmer to create an [[Array (data structure)|array]] of arbitrary size. 2) It sets each [[Memory cell (computing)|memory cell]] to zero.}}<ref name="cpl-ch8-p187">{{cite book
+ |title=The C Programming Language Second Edition
+ |last1=Kernighan
+ |first1=Brian W.
+ |last2=Ritchie
+ |first2=Dennis M.
+ |publisher=Prentice Hall
+ |year=1988
+ |isbn=0-13-110362-8
+ |page=187}}</ref> Populating the heap with data is an additional copy function.{{efn|For [[String (computer science)|string]] variables, ''C'' provides the <code>strdup()</code> function. It executes both the allocation function and the copy function.}} Variables stored in the heap are economically passed to functions using pointers. Without pointers, the entire block of data would have to be passed to the function via the stack.
+
+====C++====
+In the 1970s, [[software engineers]] needed language support to break large projects down into [[Modular programming|modules]].<ref name="cpl_3rd-ch2-38">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 38
+  | isbn = 0-201-71012-9
+}}</ref> One obvious feature was to decompose large projects ''physically'' into separate [[computer file|files]]. A less obvious feature was to decompose large projects ''logically'' into [[abstract data type|abstract datatypes]].<ref name="cpl_3rd-ch2-38"/> At the time, languages supported [[Type system|concrete (scalar)]] datatypes like [[integer]] numbers, [[floating-point]] numbers, and [[String (computer science)|strings]] of [[Character (computing)|characters]]. Abstract datatypes are [[Record (computer science)|structures]] of concrete datatypes, with a new name assigned. For example, a [[List (abstract data type)|list]] of integers could be called <code>IntegerList</code>.
+
+=====Classes=====
+{{Main|C++ classes}}
+In object-oriented terminology, an abstract datatype is called a [[Class (programming)|class]]. However, a ''class'' is only a definition; no memory is allocated. When memory is allocated to a class and [[Name binding|bound]] to an [[identifier]], it is called an [[Object (computer science)|object]].<ref name="cpl_3rd-ch8-193">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 193
+  | isbn = 0-201-71012-9
+}}</ref>
+
+[[C++]] (1985) was originally called "[[C with Classes]]".<ref name="stroustrup-notes-22">{{cite book
+  | last = Stroustrup
+  | first = Bjarne
+  | title = The C++ Programming Language, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 2013
+  | page = 22
+  | isbn = 978-0-321-56384-2
+}}</ref> It was designed to expand [[C (programming language)|C]]'s capabilities by adding the object-oriented facilities of the language [[Simula]].<ref name="stroustrup-notes-21">{{cite book
+  | last = Stroustrup
+  | first = Bjarne
+  | title = The C++ Programming Language, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 2013
+  | page = 21
+  | isbn = 978-0-321-56384-2
+}}</ref> A [[C++ classes|C++ class]] [[Encapsulation (computer programming)|encapsulates]] related data items with the functions that manipulate them.<ref name="teof-46_quote">{{cite book
+  | last = Hunter
+  | first = David
+  | title = The Essentials of C++
+  | publisher = Research & Education Association
+  | year = 1995
+  | page = 46
+  | quote = "Just as a structure definition encapsulates a set of related data items, a class definition encapsulates related data items and functions that manipulate them."
+  | isbn = 0-87891-748-9
+}}</ref>
+
+[[Object-oriented programming|Object-oriented imperative languages]] developed by combining the need for classes and the need for safe [[functional programming]].<ref name="cpl_3rd-ch2-39">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 39
+  | isbn = 0-201-71012-9
+}}</ref> A [[Function (computer programming)|function]], in an object-oriented language, is assigned to a class. An assigned function is then referred to as a [[Method (computer programming)|method]], [[member function]], or [[Operation (mathematics)|operation]]. ''Object-oriented programming'' is executing ''operations'' on ''objects''.<ref name="cpl_3rd-ch2-35">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 35
+  | isbn = 0-201-71012-9
+}}</ref>
+
+=====Inheritance=====
+C++ supports a syntax to model [[subset|subset/superset]] relationships. In [[set theory]], an [[Element (mathematics)|element]] of a subset inherits all the attributes contained in the superset. For example, a student is a person. Therefore, the set of students is a subset of the set of persons. As a result, students inherit all the attributes common to all persons. Additionally, students have unique attributes that other people do not have. C++ models ''subset/superset'' relationships using [[Inheritance (object-oriented programming)|inheritance]].<ref name="cpl_3rd-ch8-192">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 192
+  | isbn = 0-201-71012-9
+}}</ref>
+
+=====Namespaces=====
+A C++ namespace provides context in case a name conflict occurs.<ref name="pcpp-pg9_quote">{{cite book
+  | last = Gregoire
+  | first = Marc
+  | title = Professional C++
+  | edition = 6th
+  | publisher = John Wiley and Sons, Inc.
+  | year = 2024
+  | page = 9
+  | quote = Namespaces address the problem of naming conflicts between different pieces of code.
+  | isbn = 9781394193172
+}}</ref> Class names and function names may be duplicated in other source code files or third-party libraries. To wrap class names and function names in a namespace block, use the keyword <code>namespace</code>. The keyword is followed by an identifier, and the block is enclosed in parenthesis.
+
+To instantiate a class or execute a function that is within a namespace, prepend the class or function name with the namespace name followed by a double colon. For example, <code>foo::bar()</code> denotes the function <code>bar()</code> residing in the namespace <code>foo</code>. Alternatively, execute the <code>using</code> directive followed by the namespace name. Then all the class and function names may be accessed without the double colon prefix.
+
+=====Modules=====
+{{Main|Modules (C++)}}
+A C++ module provides an improvement over the legacy [[Include directive|<code>#include</code>]] [[C preprocessor|preprocessor]] directive.<ref name="pcpp-pg422_quote">{{cite book
+  | last = Gregoire
+  | first = Marc
+  | title = Professional C++
+  | edition = 6th
+  | publisher = John Wiley and Sons, Inc.
+  | year = 2024
+  | page = 422
+  | quote = Header files do have a number of problems, though, such as avoiding multiple includes of the same header file and making sure header files are included in the correct order.
+  | isbn = 9781394193172
+}}</ref> The <code>#include</code> directive allows for arbitrary files to be included in a C/C++ program. The goal is to have a common set of constants, datatypes, and function declarations across a large application.<ref name="pcpp-pg196">{{cite book
+  | last = Gehani
+  | first = Narain
+  | title = Advanced C: Food for the Educated Palate
+  | publisher = Computer Science Press
+  | year = 1985
+  | page = 196
+  | isbn = 0-88175-078-6
+}}</ref>
+
+Modules are identified to the compiler by including the <code>export module</code> statement followed by the name of the module. Other source code files then <code>import</code> the same module name to perform the module's task.<ref name="pcpp-pg5_quote">{{cite book
+  | last = Gregoire
+  | first = Marc
+  | title = Professional C++
+  | edition = 6th
+  | publisher = John Wiley and Sons, Inc.
+  | year = 2024
+  | page = 5
+  | quote = If the program did not import that module, it would be unable to perform its only task of printing text.
+  | isbn = 9781394193172
+}}</ref>
+
+Class definitions and other named declarations must also be preceded with the <code>export</code> statement to be visible to other source code files. If a <code>namespace</code> is exported, then everything inside that namespace is also exported.<ref name="pcpp-pg424">{{cite book
+  | last = Gregoire
+  | first = Marc
+  | title = Professional C++
+  | edition = 6th
+  | publisher = John Wiley and Sons, Inc.
+  | year = 2024
+  | page = 424
+  | isbn = 9781394193172
+}}</ref>
+
+=====Example=====
+This is a module for the <code>Grade</code> [[C++ classes|class]] in an application modelling a school:
+
+<syntaxhighlight lang="cpp">
+// Grade.cpp
+
+// The "export module" statement allows other programs to "import" the named module 'wikipedia.examples.Grade'
+export module wikipedia.examples.Grade;
+
+// Declare the 'wikipedia::examples' namespace
+namespace wikipedia::examples {
+
+// Define the class "Grade"
+// The "export" statement allows other modules to access this class
+export class Grade {
+private:
+    // The class variable "letter" is of type char
+    char letter;
+public:
+    // Constructor
+    explicit Grade(char letter):
+        letter{letter} {}
+
+    // A member operation
+    char getLetter() const {
+        return letter;
+    }
+};
+
+}
+</syntaxhighlight>
+
+A [[Constructor (object-oriented programming)|constructor]] function has the same name as the class name.<ref name="stroustrup-ch2-49">{{cite book
+  | last = Stroustrup
+  | first = Bjarne
+  | title = The C++ Programming Language, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 2013
+  | page = 49
+  | isbn = 978-0-321-56384-2
+}}</ref> It is executed when an object of a class is declared.<ref name="teof-49">{{cite book
+  | last = Hunter
+  | first = David
+  | title = The Essentials of C++
+  | publisher = Research & Education Association
+  | year = 1999
+  | page = 46
+  | isbn = 0-87891-748-9
+}}</ref>
+
+This is a module for the <code>Person</code> class in an application modelling a school:
+
+<syntaxhighlight lang="cpp">
+// Person.cpp
+export module wikipedia.examples.Person;
+
+// Import the standard library module 'std'
+import std;
+
+// Add the type 'std::string' into scope
+using std::string;
+
+namespace wikipedia::examples {
+
+export class Person {
+protected:
+    // The class variable "name" is a class type std::string
+    string name;
+public:
+    explicit Person(const string& name):
+        name{name} {}
+
+    string getName() const {
+        return name;
+    }
+};
+
+}
+</syntaxhighlight>
+
+This is a module for the <code>Student</code> class in an application modelling a school:
+
+<syntaxhighlight lang="cpp">
+// Student.cpp
+export module wikipedia.examples.Student;
+	
+import std;
+import wikipedia.examples.Grade;
+import wikipedia.examples.Person;
+
+using std::string;
+
+namespace wikipedia::examples {
+
+// 'Student' is a subclass of 'Person'
+export class Student : public Person {
+private:
+    Grade grade;
+public:
+    Student(const string& name, const Grade& grade):
+        Person(name), grade{grade} {}
+
+    Grade getGrade() const {
+        return grade;
+    }
+};
+
+}
+</syntaxhighlight>
+
+The syntax <code>public Person</code> means that the <code>Student</code> class extends the <code>Person</code> class, inheriting all of its variables and methods (such as <code>name</code> and <code>getName()</code>).<ref name="teo-65">{{cite book
+  | last = Hunter
+  | first = David
+  | title = The Essentials of C++
+  | publisher = Research & Education Association
+  | year = 1999
+  | page = 65
+  | isbn = 0-87891-748-9
+}}</ref>
+
+This is a driver program for demonstration:
+
+<syntaxhighlight lang="cpp">
+// Main.cpp
+import std;
+import wikipedia.examples.Grade;	
+import wikipedia.examples.Student;
+
+using wikipedia::examples::Grade;
+using wikipedia::examples::Student;
+
+int main() {
+    Student john("John Doe", Grade('A'));
+	std::println("Student name: {}, with grade {}", john.getName(), john.getGrade().getLetter());
+}
+</syntaxhighlight>
+
+Output:
+<syntaxhighlight lang="output">
+Student name: John Doe, with grade A
+</syntaxhighlight>
+
+===Declarative languages===
+{{main|Declarative programming}}
+
+''Imperative languages'' have one major criticism: assigning an expression to a ''non-local'' variable may produce an unintended [[Side effect (computer science)|side effect]].<ref name="cpl_3rd-ch9-218">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 218
+  | isbn = 0-201-71012-9
+}}</ref> [[Declarative language]]s generally omit the assignment statement and the control flow. They describe ''what'' computation should be performed and not ''how'' to compute it. Two broad categories of declarative languages are [[functional language]]s and [[Logic programming|logical languages]].
+
+The principle behind a ''functional language'' is to use [[lambda calculus]] as a guide for a well defined [[Semantics (computer science)|semantic]].<ref name="cpl_3rd-ch9-217">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 217
+  | isbn = 0-201-71012-9
+}}</ref> In mathematics, a function is a rule that maps elements from an ''expression'' to a range of ''values''. Consider the function:
+
+<code>times_10(x) = 10 * x</code>
+
+The ''expression'' <code>10 * x</code> is mapped by the function <code>times_10()</code> to a range of ''values''. One ''value'' happens to be 20. This occurs when x is 2. So, the application of the function is mathematically written as:
+
+<code>times_10(2) = 20</code>
+
+A ''functional language'' compiler will not store this value in a variable. Instead, it will ''push'' the value onto the computer's [[Call stack|stack]] before setting the [[program counter]] back to the calling function. The calling function will then ''pop'' the value from the stack.<ref name="dsa-ch3-p103">{{cite book
+  | last = Weiss
+  | first = Mark Allen
+  | title = Data Structures and Algorithm Analysis in C++
+  | publisher = Benjamin/Cummings Publishing Company, Inc.
+  | year = 1994
+  | page = 103
+  | isbn = 0-8053-5443-3
+  | quote = When there is a function call, all the important information needs to be saved, such as register values (corresponding to variable names) and the return address (which can be obtained from the program counter)[.] ... When the function wants to return, it ... restores all the registers. It then makes the return jump. Clearly, all of this work can be done using a stack, and that is exactly what happens in virtually every programming language that implements recursion.
+}}</ref>
+
+''Imperative languages'' do support functions. Therefore, ''functional programming'' can be achieved in an imperative language, if the programmer uses discipline. However, a ''functional language'' will force this discipline onto the programmer through its syntax. Functional languages have a syntax tailored to emphasize the ''what''.<ref name="cpl_3rd-ch9-230">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 230
+  | isbn = 0-201-71012-9
+}}</ref>
+
+A functional program is developed with a set of primitive functions followed by a single driver function.<ref name="cpl_3rd-ch9-218"/> Consider the [[Snippet (programming)|snippet]]:
+
+<syntaxhighlight lang="c">
+int max(int a, int b) {
+    return a < b ? b : a;
+}
+
+int min(int a, int b) {
+    return a < b ? a : b;
+}
+
+int range(int a, int b, int c) {
+    return max(a, max(b, c)) - min(a, min(b, c));
+}
+</syntaxhighlight>
+
+The primitives are <code>max()</code> and <code>min()</code>. The driver function is <code>range()</code>.
+
+For example, <syntaxhighlight lang="c" inline>printf("%d", range(10, 4, 7));</syntaxhighlight> will print 6.
+
+''Functional languages'' are used in [[computer science]] research to explore new language features.<ref name="cpl_3rd-ch9-240">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 240
+  | isbn = 0-201-71012-9
+}}</ref> Moreover, their lack of side-effects have made them popular in [[parallel programming]] and [[concurrent programming]].<ref name="cpl_3rd-ch9-241">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 241
+  | isbn = 0-201-71012-9
+}}</ref> However, application developers prefer the [[object-oriented programming|object-oriented features]] of ''imperative languages''.<ref name="cpl_3rd-ch9-241"/>
+
+====Lisp====
+[[Lisp (programming language)|Lisp]] (1958) stands for "LISt Processor".<ref name="ArtOfLisp">{{cite book
+ | last1=Jones
+ | first1=Robin
+ | last2=Maynard
+ | first2=Clive
+ | last3=Stewart
+ | first3=Ian
+ | title=The Art of Lisp Programming
+ | date=December 6, 2012
+ | publisher=Springer Science & Business Media
+ | isbn=9781447117193
+ | page=2}}</ref> It is tailored to process [[List (abstract data type)|lists]]. A full structure of the data is formed by building lists of lists. In memory, a [[tree data structure]] is built. Internally, the tree structure lends nicely for [[Recursion (computer science)|recursive]] functions.<ref name="cpl_3rd-ch9-220">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 220
+  | isbn = 0-201-71012-9
+}}</ref> The syntax to build a tree is to enclose the space-separated [[Element (mathematics)|elements]] within parenthesis. The following is a [[list]] of three elements. The first two elements are themselves lists of two elements:
+
+<code>((A B) (HELLO WORLD) 94)</code>
+
+Lisp has functions to extract and reconstruct elements.<ref name="cpl_3rd-ch9-221">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 221
+  | isbn = 0-201-71012-9
+}}</ref> The function <code>head()</code> returns a list containing the first element in the list. The function <code>tail()</code> returns a list containing everything but the first element. The function <code>cons()</code> returns a list that is the concatenation of other lists. Therefore, the following expression will return the list <code>x</code>:
+
+<code>cons(head(x), tail(x))</code>
+
+One drawback of Lisp is when many functions are nested, the parentheses may look confusing.<ref name="cpl_3rd-ch9-230"/> Modern Lisp [[Integrated development environment|environments]] help ensure parenthesis match. As an aside, Lisp does support the ''imperative language'' operations of the assignment statement and goto loops.<ref name="cpl_3rd-ch9-229">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 229
+  | isbn = 0-201-71012-9
+}}</ref> Also, ''Lisp'' is not concerned with the [[datatype]] of the elements at compile time.<ref name="cpl_3rd-ch9-227">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 227
+  | isbn = 0-201-71012-9
+}}</ref> Instead, it assigns (and may reassign) the datatypes at [[Runtime (program lifecycle phase)|runtime]]. Assigning the datatype at runtime is called [[Name binding#Binding time|dynamic binding]].<ref name="cpl_3rd-ch9-222">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 222
+  | isbn = 0-201-71012-9
+}}</ref> Whereas dynamic binding increases the language's flexibility, programming errors may linger until late in the [[software development process]].<ref name="cpl_3rd-ch9-222"/>
+
+Writing large, reliable, and readable Lisp programs requires forethought. If properly planned, the program may be much shorter than an equivalent ''imperative language'' program.<ref name="cpl_3rd-ch9-230"/> ''Lisp'' is widely used in [[artificial intelligence]]. However, its usage has been accepted only because it has ''imperative language'' operations, making unintended side-effects possible.<ref name="cpl_3rd-ch9-241"/>
+
+====ML====
+[[ML (programming language)|ML]] (1979) stands for "Meta Language". ML checks to make sure only data of the same type are compared with one another.<ref name="cpl_3rd-ch9-233">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 233
+  | isbn = 0-201-71012-9
+}}</ref> For example, this function has one input parameter (an integer) and returns an integer:
+
+{{sxhl|2=sml|1=fun times_10(n : int) : int = 10 * n;}}
+
+''ML'' is not parenthesis-eccentric like ''Lisp''. The following is an application of <code>times_10()</code>:
+
+ times_10 2
+
+It returns "{{samp|20 : int}}". (Both the results and the datatype are returned.)
+
+Like ''Lisp'', ''ML'' is tailored to process lists. Unlike ''Lisp'', each element is the same datatype.<ref name="cpl_3rd-ch9-235">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 235
+  | isbn = 0-201-71012-9
+}}</ref> Moreover, ''ML'' assigns the datatype of an element at [[compile time]]. Assigning the datatype at compile time is called [[Name binding#Binding time|static binding]]. Static binding increases reliability because the compiler checks the context of variables before they are used.<ref name="cpl_3rd-ch3-55">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 55
+  | isbn = 0-201-71012-9
+}}</ref>
+
+====Prolog====
+[[Prolog]] (1972) stands for "PROgramming in LOGic". It is a [[logic programming]] language, based on formal [[logic]]. The language was developed by [[Alain Colmerauer]] and Philippe Roussel in Marseille, France. It is an implementation of [[SLD resolution|Selective Linear Definite clause resolution]], pioneered by [[Robert Kowalski]] and others at the [[University of Edinburgh]].<ref>{{Cite journal
+ | publisher = Association for Computing Machinery
+ | doi = 10.1145/155360.155362
+ | first1 = A.
+ | last1 = Colmerauer
+ | first2 = P.
+ | last2 = Roussel
+ | title = The birth of Prolog
+ | journal = ACM SIGPLAN Notices
+ | volume = 28
+ | issue = 3
+ | page = 5
+ | year = 1992
+ | url=http://alain.colmerauer.free.fr/alcol/ArchivesPublications/PrologHistory/19november92.pdf}}</ref>
+
+The building blocks of a Prolog program are ''facts'' and ''rules''. Here is a simple example:
+<syntaxhighlight lang=prolog>
+cat(tom).                        % tom is a cat
+mouse(jerry).                    % jerry is a mouse
+
+animal(X) :- cat(X).             % each cat is an animal
+animal(X) :- mouse(X).           % each mouse is an animal
+
+big(X)   :- cat(X).              % each cat is big
+small(X) :- mouse(X).            % each mouse is small
+
+eat(X,Y) :- mouse(X), cheese(Y). % each mouse eats each cheese
+eat(X,Y) :- big(X),   small(Y).  % each big animal eats each small animal
+</syntaxhighlight>
+
+After all the facts and rules are entered, then a question can be asked:
+: Will Tom eat Jerry?
+<syntaxhighlight lang=prolog>
+?- eat(tom,jerry).
+true
+</syntaxhighlight>
+
+The following example shows how Prolog will convert a letter grade to its numeric value:
+<syntaxhighlight lang="prolog">
+numeric_grade('A', 4).
+numeric_grade('B', 3).
+numeric_grade('C', 2).
+numeric_grade('D', 1).
+numeric_grade('F', 0).
+numeric_grade(X, -1) :- not X = 'A', not X = 'B', not X = 'C', not X = 'D', not X = 'F'.
+grade('The Student', 'A').
+</syntaxhighlight>
+<syntaxhighlight lang="prolog">
+?- grade('The Student', X), numeric_grade(X, Y).
+X = 'A',
+Y = 4
+</syntaxhighlight>
+
+Here is a comprehensive example:<ref name="Logical English">Kowalski, R., Dávila, J., Sartor, G. and Calejo, M., 2023. Logical English for law and education. In Prolog: The Next 50 Years (pp. 287–299). Cham: Springer Nature Switzerland.</ref>
+
+1) All dragons billow fire, or equivalently, a thing billows fire if the thing is a dragon:
+<syntaxhighlight lang="prolog">
+billows_fire(X) :-
+    is_a_dragon(X).
+</syntaxhighlight>
+2) A creature billows fire if one of its parents billows fire:
+<syntaxhighlight lang="prolog">
+billows_fire(X) :-
+    is_a_creature(X),
+    is_a_parent_of(Y,X),
+    billows_fire(Y).
+</syntaxhighlight>
+3) A thing X is a parent of a thing Y if X is the mother of Y or X is the father of Y:
+<syntaxhighlight lang="prolog">
+is_a_parent_of(X, Y):- is_the_mother_of(X, Y).
+is_a_parent_of(X, Y):- is_the_father_of(X, Y).
+</syntaxhighlight>
+
+4) A thing is a creature if the thing is a dragon:
+<syntaxhighlight lang="prolog">
+is_a_creature(X) :-
+    is_a_dragon(X).
+</syntaxhighlight>
+
+5) Norberta is a dragon, and Puff is a creature. Norberta is the mother of Puff.
+
+<syntaxhighlight lang="prolog">
+is_a_dragon(norberta).
+is_a_creature(puff).
+is_the_mother_of(norberta, puff).
+</syntaxhighlight>
+
+Rule (2) is a [[Recursion (computer science)|recursive]] (inductive) definition. It can be understood declaratively, without the need to understand how it is executed.
+
+Rule (3) shows how [[Function (computer programming)|functions]] are represented by using relations. Here, the mother and father functions ensure that every individual has only one mother and only one father.
+
+Prolog is an untyped language. Nonetheless, [[Inheritance (object-oriented programming)|inheritance]] can be represented by using predicates. Rule (4) asserts that a creature is a superclass of a dragon.
+
+Questions are answered using [[backward reasoning]]. Given the question:
+
+<syntaxhighlight lang="prolog"> ?- billows_fire(X).
+ </syntaxhighlight>
+Prolog generates two answers :
+<syntaxhighlight lang="prolog">
+X = norberta
+X = puff
+ </syntaxhighlight>
+
+Practical applications for Prolog are [[knowledge representation]] and [[problem solving]] in [[artificial intelligence]].
+
+===Object-oriented programming===
+[[Object-oriented programming]] is a programming method to execute [[Method (computer programming)|operations]] ([[Function (computer programming)|functions]]) on [[Object (computer science)|objects]].<ref name="cpl_3rd-ch2-35_quote1">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 35
+  | isbn = 0-201-71012-9
+  | quote = Simula was based on Algol 60 with one very important addition — the class concept. ... The basic idea was that the data (or data structure) and the operations performed on it belong together[.]
+}}</ref> The basic idea is to group the characteristics of a [[phenomenon]] into an object [[Record (computer science)|container]] and give the container a name. The ''operations'' on the phenomenon are also grouped into the container.<ref name="cpl_3rd-ch2-35_quote1"/> ''Object-oriented programming'' developed by combining the need for containers and the need for safe [[functional programming]].<ref name="cpl_3rd-ch2-39_quote1">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 39
+  | isbn = 0-201-71012-9
+  | quote = Originally, a large number of experimental languages were designed, many of which combined object-oriented and functional programming.
+}}</ref> This programming method need not be confined to an ''object-oriented language''.<ref name="se-ch9-284_quote1">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 284
+  | isbn = 0-256-08515-3
+  | quote = While it is true that OOD [(object oriented design)] as such is not supported by the majority of popular languages, a large subset of OOD can be used.
+}}</ref> In an object-oriented language, an object container is called a [[Class (programming)|class]]. In a non-object-oriented language, a [[data structure]] (which is also known as a [[Record (computer science)|record]]) may become an object container. To turn a data structure into an object container, operations need to be written specifically for the structure. The resulting structure is called an [[abstract datatype]].<ref name="dsa-ch3-p57">{{cite book
+  | last = Weiss
+  | first = Mark Allen
+  | title = Data Structures and Algorithm Analysis in C++
+  | publisher = Benjamin/Cummings Publishing Company, Inc.
+  | year = 1994
+  | page = 57
+  | isbn = 0-8053-5443-3
+}}</ref> However, [[Inheritance (object-oriented programming)|inheritance]] will be missing. Nonetheless, this shortcoming can be overcome.
+
+This is a [[C programming language|C]] [[Include_directive#Header_file|header file]] for the <code>Grade</code> datatype in an application modelling a school:
+
+<syntaxhighlight lang="c">
+// Grade.h
+#pragma once
+
+typedef struct {
+    char letter;
+} Grade;
+
+// Constructor
+Grade *grade_new(char letter);
+// Destructor
+void grade_delete(Grade *g);
+</syntaxhighlight>
+
+The <code>grade_new()</code> function behaves like the C++ [[Constructor (object-oriented programming)|constructor]], creating a new <code>Grade</code> instance.
+
+This is a C [[source code|source file]] for the <code>Grade</code> datatype in an application modelling a school:
+
+<syntaxhighlight lang="c">
+// Grade.c
+#include <stdio.h>
+#include <stdlib.h>
+#include "Grade.h"
+
+Grade *grade_new(char letter) {
+    Grade *grade;
+
+    // Allocate and zero-out heap memory
+    if (!(grade = calloc(1, sizeof(Grade)))) {
+        fprintf(stderr, "Error: calloc() returned empty.\n");
+        return NULL;
+    }
+
+    grade->letter = letter;
+    return grade;
+}
+
+void grade_delete(Grade *g) {
+    free(g);
+}
+</syntaxhighlight>
+
+This is a C ''header file'' for the <code>Person</code> datatype in an application modelling a school:
+
+<syntaxhighlight lang="cpp">
+// Person.h
+#pragma once
+
+typedef struct {
+    char *name;
+} Person;
+
+// Constructor
+Person *person_new(char *name);
+// Destructor
+void person_delete(Person *p);
+</syntaxhighlight>
+
+Here is a C ''source file'' for the <code>Person</code> datatype in an application modelling a school:
+
+<syntaxhighlight lang="cpp">
+// Person.c
+#include <stdlib.h>
+#include "Person.h"
+
+Person *person_new(char *name) {
+    Person *person;
+
+    // Error checking omitted
+    person = calloc(1, sizeof(Person));
+
+    person->name = name;
+    return person;
+}
+
+void person_delete(Person *p) {
+    free(p);
+}
+</syntaxhighlight>
+
+This is a C ''header file'' for the <code>Student</code> datatype in an application modelling a school:
+
+<syntaxhighlight lang="c">
+// Student.h
+#pragma once
+
+#include "Grade.h"
+#include "Person.h"
+
+typedef struct {
+    Person *person;
+    Grade *grade;
+} Student;
+
+Student *student_new(char *name);
+void *student_delete(Student *s);
+</syntaxhighlight>
+
+This is a C ''source file'' for the <code>Student</code> datatype in an application modelling a school:
+
+<syntaxhighlight lang="cpp">
+// student.c
+#include <stdlib.h>
+#include "Person.h"
+#include "Student.h"
+
+Student *student_new(char *name) {
+    Student *student;
+
+    // First construct a Student
+    student = calloc(1, sizeof(Student));
+ 
+    // Second construct a Person
+    student->person = person_new(name);
+    return student;
+}
+
+void student_delete(Student *s) {
+    free(s->person);
+    free(s->grade);
+    free(s);
+}
+</syntaxhighlight>
+
+This is a driver program for demonstration:
+
+<syntaxhighlight lang="c">
+// Main.c
+#include <stdio.h>
+#include "Student.h"
+
+int main() {
+    Student *john = student_new("John Doe");
+    john->grade = grade_new('A');
+
+    printf(
+        "Student name: %s, with grade %d\n"
+        john->person->name,
+        john->grade->letter
+    );
+
+    grade_delete(john->grade);
+    student_delete(john);
+
+	return 0;
+}
+</syntaxhighlight>
+
+The formal strategy to build object-oriented objects is to:<ref name="se-ch9-285">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 285
+  | isbn = 0-256-08515-3
+}}</ref>
+* Identify the objects. Most likely these will be nouns.
+* Identify each object's attributes. What helps to describe the object?
+* Identify each object's actions. Most likely these will be verbs.
+* Identify the relationships from object to object. Most likely these will be verbs.
+
+For example:
+* A person is a human identified by a name.
+* A grade is an achievement identified by a letter.
+* A student is a person who earns a grade.
+
+===Syntax and semantics===
+[[File:Terminal and non-terminal symbols example.png|300px|thumb|right|Production rules consist of a set of terminals and non-terminals.]]
+
+The [[Syntax (programming languages)|syntax]] of a ''computer program'' is a [[list]] of [[Production (computer science)|production rules]] which form its [[formal grammar|grammar]].<ref name="cpl_3rd-ch12-290_quote">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 290
+  | quote = The syntax (or grammar) of a programming language describes the correct form in which programs may be written[.]
+  | isbn = 0-201-71012-9
+}}</ref> A programming language's grammar correctly places its [[Declaration (computer programming)|declarations]], [[Expression (computer science)|expressions]], and [[Statement (computer science)|statements]].<ref name="cpl_3rd-ch4-78_quote1">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 78
+  | isbn = 0-201-71012-9
+  | quote = The main components of an imperative language are declarations, expressions, and statements.
+}}</ref> Complementing the ''syntax'' of a language are its [[Semantics (computer science)|semantics]]. The ''semantics'' describe the meanings attached to various syntactic constructs.<ref name="cpl_3rd-ch12-290">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 290
+  | isbn = 0-201-71012-9
+}}</ref> A syntactic construct may need a semantic description because a production rule may have an invalid interpretation.<ref name="cpl_3rd-ch12-294">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 294
+  | isbn = 0-201-71012-9
+}}</ref> Also, different languages might have the same syntax; however, their behaviors may be different.
+
+The syntax of a language is formally described by listing the production rules. Whereas the syntax of a [[natural language]] is extremely complicated, a subset of the English language can have this production rule listing:<ref name="discrete-ch10-p615">{{cite book
+  | last = Rosen
+  | first = Kenneth H.
+  | title = Discrete Mathematics and Its Applications
+  | publisher = McGraw-Hill, Inc.
+  | year = 1991
+  | page = [https://archive.org/details/discretemathemat00rose/page/615 615]
+  | isbn = 978-0-07-053744-6
+  | url = https://archive.org/details/discretemathemat00rose/page/615}}</ref>
+# a '''sentence''' is made up of a '''noun-phrase''' followed by a '''verb-phrase''';
+# a '''noun-phrase''' is made up of an '''article''' followed by an '''adjective''' followed by a '''noun''';
+# a '''verb-phrase''' is made up of a '''verb''' followed by a '''noun-phrase''';
+# an '''article''' is 'the';
+# an '''adjective''' is 'big' or
+# an '''adjective''' is 'small';
+# a '''noun''' is 'cat' or
+# a '''noun''' is 'mouse';
+# a '''verb''' is 'eats';
+The words in '''bold-face''' are known as ''non-terminals''. The words in 'single quotes' are known as ''terminals''.<ref name="cpl_3rd-ch12-291">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 291
+  | isbn = 0-201-71012-9
+}}</ref>
+
+From this production rule listing, complete sentences may be formed using a series of replacements.<ref name="discrete-ch10-p616">{{cite book
+  | last = Rosen
+  | first = Kenneth H.
+  | title = Discrete Mathematics and Its Applications
+  | publisher = McGraw-Hill, Inc.
+  | year = 1991
+  | page = [https://archive.org/details/discretemathemat00rose/page/616 616]
+  | isbn = 978-0-07-053744-6
+  | url = https://archive.org/details/discretemathemat00rose/page/616}}</ref> The process is to replace ''non-terminals'' with either a valid ''non-terminal'' or a valid ''terminal''. The replacement process repeats until only ''terminals'' remain. One valid sentence is:
+* '''sentence'''
+* '''noun-phrase''' '''verb-phrase'''
+* '''article''' '''adjective''' '''noun''' '''verb-phrase'''
+* ''the'' '''adjective''' '''noun''' '''verb-phrase'''
+* ''the'' ''big'' '''noun''' '''verb-phrase'''
+* ''the'' ''big'' ''cat'' '''verb-phrase'''
+* ''the'' ''big'' ''cat'' '''verb''' '''noun-phrase'''
+* ''the'' ''big'' ''cat'' ''eats'' '''noun-phrase'''
+* ''the'' ''big'' ''cat'' ''eats'' '''article''' '''adjective''' '''noun'''
+* ''the'' ''big'' ''cat'' ''eats'' ''the'' '''adjective''' '''noun'''
+* ''the'' ''big'' ''cat'' ''eats'' ''the'' ''small'' '''noun'''
+* ''the'' ''big'' ''cat'' ''eats'' ''the'' ''small'' ''mouse''
+
+However, another combination results in an invalid sentence:
+* ''the'' ''small'' ''mouse'' ''eats'' ''the'' ''big'' ''cat''
+Therefore, a ''semantic'' is necessary to correctly describe the meaning of an ''eat'' activity.
+
+One ''production rule'' listing method is called the [[Backus–Naur form]] (BNF).<ref name="discrete-ch10-p623">{{cite book
+  | last = Rosen
+  | first = Kenneth H.
+  | title = Discrete Mathematics and Its Applications
+  | publisher = McGraw-Hill, Inc.
+  | year = 1991
+  | page = [https://archive.org/details/discretemathemat00rose/page/623 623]
+  | isbn = 978-0-07-053744-6
+  | url = https://archive.org/details/discretemathemat00rose/page/623}}</ref> BNF describes the syntax of a language and itself has a ''syntax''. This recursive definition is an example of a [[metalanguage]].<ref name="cpl_3rd-ch12-290"/> The ''syntax'' of BNF includes:
+* <code>::=</code> which translates to ''is made up of a[n]'' when a non-terminal is to its right. It translates to ''is'' when a terminal is to its right.
+* <code>|</code> which translates to ''or''.
+* <code><</code> and <code>></code> which surround '''non-terminals'''.
+
+Using BNF, a subset of the English language can have this ''production rule'' listing:
+<syntaxhighlight lang="bnf">
+<sentence> ::= <noun-phrase><verb-phrase>
+<noun-phrase> ::= <article><adjective><noun>
+<verb-phrase> ::= <verb><noun-phrase>
+<article> ::= the
+<adjective> ::= big | small
+<noun> ::= cat | mouse
+<verb> ::= eats
+</syntaxhighlight>
+
+Using BNF, a signed-[[Integer (computer science)|integer]] has the ''production rule'' listing:<ref name="discrete-ch10-p624">{{cite book
+  | last = Rosen
+  | first = Kenneth H.
+  | title = Discrete Mathematics and Its Applications
+  | publisher = McGraw-Hill, Inc.
+  | year = 1991
+  | page = [https://archive.org/details/discretemathemat00rose/page/624 624]
+  | isbn = 978-0-07-053744-6
+  | url = https://archive.org/details/discretemathemat00rose/page/624}}</ref>
+<syntaxhighlight lang="bnf">
+<signed-integer> ::= <sign><integer>
+<sign> ::= + | -
+<integer> ::= <digit> | <digit><integer>
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+</syntaxhighlight>
+
+Notice the recursive production rule:
+<syntaxhighlight lang="bnf">
+<integer> ::= <digit> | <digit><integer>
+</syntaxhighlight>
+This allows for an infinite number of possibilities. Therefore, a ''semantic'' is necessary to describe a limitation of the number of digits.
+
+Notice the leading zero possibility in the production rules:
+<syntaxhighlight lang="bnf">
+<integer> ::= <digit> | <digit><integer>
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+</syntaxhighlight>
+Therefore, a ''semantic'' is necessary to describe that leading zeros need to be ignored.
+
+Two formal methods are available to describe ''semantics''. They are [[denotational semantics]] and [[axiomatic semantics]].<ref name="cpl_3rd-ch12-297">{{cite book
+  | last = Wilson
+  | first = Leslie B.
+  | title = Comparative Programming Languages, Third Edition
+  | publisher = Addison-Wesley
+  | year = 2001
+  | page = 297
+  | isbn = 0-201-71012-9
+}}</ref>
+
+==Software engineering and computer programming==
+[[File:Two women operating ENIAC (full resolution).jpg|thumb|right|Prior to programming languages, [[Jean Bartik|Betty Jennings]] and [[Fran Bilas]] programmed the [[ENIAC]] by moving cables and setting switches.]]
+
+[[Software engineering]] is a variety of techniques to produce [[software quality|quality]] ''computer programs''.<ref name="se-preface1">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = Preface
+  | isbn = 0-256-08515-3
+}}</ref> [[Computer programming]] is the process of writing or editing [[source code]]. In a formal environment, a [[systems analyst]] will gather information from managers about all the organization's processes to automate. This professional then prepares a [[Functional requirement|detailed plan]] for the new or modified system.<ref name="pis-ch12-p507">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 507
+  | isbn = 0-619-06489-7
+}}</ref> The plan is analogous to an architect's blueprint.<ref name="pis-ch12-p507"/>
+
+===Performance objectives===
+The systems analyst has the objective to deliver the right information to the right person at the right time.<ref name="pis-ch12-p513">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 513
+  | isbn = 0-619-06489-7
+}}</ref> The critical factors to achieve this objective are:<ref name="pis-ch12-p513"/>
+# The quality of the output. Is the output useful for decision-making?
+# The accuracy of the output. Does it reflect the true situation?
+# The format of the output. Is the output easily understood?
+# The speed of the output. Time-sensitive information is important when communicating with the customer in real time.
+
+===Cost objectives===
+Achieving performance objectives should be balanced with all of the costs, including:<ref name="pis-ch12-p514">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 514
+  | isbn = 0-619-06489-7
+}}</ref>
+# Development costs.
+# Uniqueness costs. A reusable system may be expensive. However, it might be preferred over a limited-use system.
+# Hardware costs.
+# Operating costs.
+
+Applying a [[Systems development life cycle|systems development process]] will mitigate the axiom: the later in the process an error is detected, the more expensive it is to correct.<ref name="pis-ch12-p516">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 516
+  | isbn = 0-619-06489-7
+}}</ref>
+
+===Waterfall model===
+The [[waterfall model]] is an implementation of a ''systems development process''.<ref name="se-ch1-8">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 8
+  | isbn = 0-256-08515-3
+}}</ref> As the ''waterfall'' label implies, the basic phases overlap each other:<ref name="pis-ch12-p517">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 517
+  | isbn = 0-619-06489-7
+}}</ref>
+# The ''investigation phase'' is to understand the underlying problem.
+# The ''analysis phase'' is to understand the possible solutions.
+# The ''design phase'' is to [[Software design|plan]] the best solution.
+# The ''implementation phase'' is to program the best solution.
+# The ''maintenance phase'' lasts throughout the life of the system. Changes to the system after it is deployed may be necessary.<ref name="se-ch11-345">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 345
+  | isbn = 0-256-08515-3
+}}</ref> Faults may exist, including specification faults, design faults, or coding faults. Improvements may be necessary. Adaption may be necessary to react to a changing environment.
+
+===Computer programmer===
+A [[computer programmer]] is a specialist responsible for writing or modifying the source code to implement the detailed plan.<ref name="pis-ch12-p507"/> A programming team is likely to be needed because most systems are too large to be completed by a single programmer.<ref name="se-ch10-319">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 319
+  | isbn = 0-256-08515-3
+}}</ref> However, adding programmers to a project may not shorten the completion time. Instead, it may lower the quality of the system.<ref name="se-ch10-319"/> To be effective, program modules need to be defined and distributed to team members.<ref name="se-ch10-319"/> Also, team members must interact with one another in a meaningful and effective way.<ref name="se-ch10-319"/>
+
+Computer programmers may be [[Programming in the large and programming in the small#Programming in the small|programming in the small]]: programming within a single module.<ref name="se-ch10-331">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 331
+  | isbn = 0-256-08515-3
+}}</ref> Chances are a module will execute modules located in other source code files. Therefore, computer programmers may be [[programming in the large]]: programming modules so they will effectively couple with each other.<ref name="se-ch10-331"/> Programming-in-the-large includes contributing to the [[application programming interface]] (API).
+
+===Program modules===
+[[Modular programming]] is a technique to refine ''imperative language'' programs. Refined programs may reduce the software size, separate responsibilities, and thereby mitigate [[software aging]]. A ''program module'' is a sequence of statements that are bounded within a [[Block (programming)|block]] and together identified by a name.<ref name="se-ch8-216">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 216
+  | isbn = 0-256-08515-3
+}}</ref> Modules have a ''function'', ''context'', and ''logic'':<ref name="se-ch8-219">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 219
+  | isbn = 0-256-08515-3
+}}</ref>
+
+* The ''function'' of a module is what it does.
+* The ''context'' of a module are the elements being performed upon.
+* The ''logic'' of a module is how it performs the function.
+
+The module's name should be derived first by its ''function'', then by its ''context''. Its ''logic'' should not be part of the name.<ref name="se-ch8-219"/> For example, <code>function compute_square_root( x )</code> or <code>function compute_square_root_integer( i : integer )</code> are appropriate module names. However, <code>function compute_square_root_by_division( x )</code> is not.
+
+The degree of interaction ''within'' a module is its level of [[Cohesion (computer science)|cohesion]].<ref name="se-ch8-219"/> ''Cohesion'' is a judgment of the relationship between a module's name and its ''function''. The degree of interaction ''between'' modules is the level of [[Coupling (computer science)|coupling]].<ref name="se-ch8-226">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 226
+  | isbn = 0-256-08515-3
+}}</ref> ''Coupling'' is a judgement of the relationship between a module's ''context'' and the elements being performed upon.
+
+===Cohesion===
+The levels of cohesion from worst to best are:<ref name="se-ch8-220">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 220
+  | isbn = 0-256-08515-3
+}}</ref>
+
+* ''Coincidental Cohesion'': A module has coincidental cohesion if it performs multiple functions, and the functions are completely unrelated. For example, <code>function read_sales_record_print_next_line_convert_to_float()</code>. Coincidental cohesion occurs in practice if management enforces silly rules. For example, "Every module will have between 35 and 50 executable statements."<ref name="se-ch8-220"/>
+* Logical Cohesion: A module has logical cohesion if it has available a series of functions, but only one of them is executed. For example, <code>function perform_arithmetic( perform_addition, a, b )</code>.
+* ''Temporal Cohesion'': A module has temporal cohesion if it performs functions related to time. One example, <code>function initialize_variables_and_open_files()</code>. Another example, <code>stage_one()</code>, <code>stage_two()</code>, ...
+* ''Procedural Cohesion'': A module has procedural cohesion if it performs multiple loosely related functions. For example, <code>function read_part_number_update_employee_record()</code>.
+* ''Communicational Cohesion'': A module has communicational cohesion if it performs multiple closely related functions. For example, <code>function read_part_number_update_sales_record()</code>.
+* ''Informational Cohesion'': A module has informational cohesion if it performs multiple functions, but each function has its own entry and exit points. Moreover, the functions share the same data structure. Object-oriented classes work at this level.
+* ''Functional Cohesion'': a module has functional cohesion if it achieves a single goal working only on local variables. Moreover, it may be reusable in other contexts.
+
+===Coupling===
+The levels of coupling from worst to best are:<ref name="se-ch8-226"/>
+
+* ''Content Coupling'': A module has content coupling if it modifies a [[local variable]] of another function. COBOL used to do this with the ''alter'' verb.
+* ''Common Coupling'': A module has common coupling if it modifies a global variable.
+* ''Control Coupling'': A module has control coupling if another module can modify its [[control flow]]. For example, <code>perform_arithmetic( perform_addition, a, b )</code>. Instead, control should be on the makeup of the returned object.
+* ''Stamp Coupling'': A module has stamp coupling if an element of a data structure passed as a parameter is modified. Object-oriented classes work at this level.
+* '' Data Coupling'': A module has data coupling if all of its input parameters are needed and none of them are modified. Moreover, the result of the function is returned as a single object.
+
+===Data flow analysis===
+[[File:Sandwich data flow diagram.pdf|thumb|A sample function-level data-flow diagram]]
+''Data flow analysis'' is a design method used to achieve modules of ''functional cohesion'' and ''data coupling''.<ref name="se-ch9-258">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 258
+  | isbn = 0-256-08515-3
+}}</ref> The input to the method is a [[data-flow diagram]]. A data-flow diagram is a set of ovals representing modules. Each module's name is displayed inside its oval. Modules may be at the executable level or the function level.
+
+The diagram also has arrows connecting modules to each other. Arrows pointing into modules represent a set of inputs. Each module should have only one arrow pointing out from it to represent its single output object. (Optionally, an additional exception arrow points out.) A [[Daisy chain (electrical engineering)|daisy chain]] of ovals will convey an entire [[algorithm]]. The input modules should start the diagram. The input modules should connect to the transform modules. The transform modules should connect to the output modules.<ref name="se-ch9-259">{{cite book
+  | last = Schach
+  | first = Stephen R.
+  | title = Software Engineering
+  | publisher = Aksen Associates Incorporated Publishers
+  | year = 1990
+  | page = 259
+  | isbn = 0-256-08515-3
+}}</ref>
+
+==Functional categories==
+[[File:Operating system placement (software).svg|thumb|upright|A diagram showing that the [[User (computing)|user]] interacts with the [[application software]]. The application software interacts with the [[operating system]], which interacts with the [[Computer hardware|hardware]].]]
+
+''Computer programs'' may be categorized along functional lines. The main functional categories are [[application software]] and [[system software]]. System software includes the [[operating system]], which couples [[computer hardware]] with application software.<ref name="osc-overview"/> The purpose of the operating system is to provide an environment where application software executes in a convenient and efficient manner.<ref name="osc-overview">{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 1
+  | isbn = 978-0-201-50480-4
+}}</ref> Both application software and system software execute [[Utility software|utility programs]]. At the hardware level, a [[Microcode|microcode program]] controls the circuits throughout the [[central processing unit]].
+
+===Application software===
+{{Main|Application software}}
+Application software is the key to unlocking the potential of the computer system.<ref name="pis-ch4-p147_quote1">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 147
+  | isbn = 0-619-06489-7
+  | quote = The key to unlocking the potential of any computer system is application software.
+}}</ref> [[Enterprise application software]] bundles accounting, personnel, customer, and vendor applications. Examples include [[enterprise resource planning]], [[customer relationship management]], and [[supply chain management software]].
+
+Enterprise applications may be developed in-house as a one-of-a-kind [[proprietary software]].<ref name="pis-ch4-p148">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 147
+  | isbn = 0-619-06489-7
+}}</ref> Alternatively, they may be purchased as [[off-the-shelf software]]. Purchased software may be modified to provide [[custom software]]. If the application is customized, then either the company's resources are used or the resources are outsourced. Outsourced software development may be from the original software vendor or a third-party developer.<ref name="pis-ch4-p147_quote2">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 147
+  | isbn = 0-619-06489-7
+  | quote = [A] third-party software firm, often called a value-added software vendor, may develop or modify a software program to meet the needs of a particular industry or company.
+}}</ref>
+
+The potential advantages of in-house software are features and reports may be developed exactly to specification.<ref name="pis-ch4-p148_quote1">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 148
+  | isbn = 0-619-06489-7
+  | quote = Heading: Proprietary Software; Subheading: Advantages; Quote: You can get exactly what you need in terms of features, reports, and so on.
+}}</ref> Management may also be involved in the development process and offer a level of control.<ref name="pis-ch4-p148_quote2">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 148
+  | isbn = 0-619-06489-7
+  | quote = Heading: Proprietary Software; Subheading: Advantages; Quote: Being involved in the development offers a further level of control over the results.
+}}</ref> Management may decide to counteract a competitor's new initiative or implement a customer or vendor requirement.<ref name="pis-ch4-p148_quote3">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 147
+  | isbn = 0-619-06489-7
+  | quote = Heading: Proprietary Software; Subheading: Advantages; Quote: There is more flexibility in making modifications that may be required to counteract a new initiative by one of your competitors or to meet new supplier and/or customer requirements.
+}}</ref>  A merger or acquisition may necessitate enterprise software changes. The potential disadvantages of in-house software are time and resource costs may be extensive.<ref name="pis-ch4-p148"/> Furthermore, risks concerning features and performance may be looming.
+
+The potential advantages of off-the-shelf software are upfront costs are identifiable, the basic needs should be fulfilled, and its performance and reliability have a track record.<ref name="pis-ch4-p148"/> The potential disadvantages of off-the-shelf software are it may have unnecessary features that confuse end users, it may lack features the enterprise needs, and the data flow may not match the enterprise's work processes.<ref name="pis-ch4-p148"/>
+
+====Application service provider====
+One approach to economically obtaining a customized enterprise application is through an [[application service provider]].<ref name="pis-ch4-p149">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 149
+  | isbn = 0-619-06489-7
+}}</ref> Specialty companies provide hardware, custom software, and end-user support. They may speed the development of new applications because they possess skilled information system staff. The biggest advantage is it frees in-house resources from staffing and managing complex computer projects.<ref name="pis-ch4-p149"/> Many application service providers target small, fast-growing companies with limited information system resources.<ref name="pis-ch4-p149"/> On the other hand, larger companies with major systems will likely have their technical infrastructure in place. One risk is having to trust an external organization with sensitive information. Another risk is having to trust the provider's infrastructure reliability.<ref name="pis-ch4-p149"/>
+
+===Operating system===
+{{See also|Operating system}}
+[[File:Concepts- Program vs. Process vs. Thread.jpg|thumb|Program vs. [[Process (computing)|Process]] vs. [[Thread (computing)|Thread]] <br/>[[Scheduling (computing)|Scheduling]], [[Preemption (computing)|Preemption]], [[Context switch|Context Switching]]|upright=1.8]]
+An [[operating system]] is the low-level software that supports a computer's basic functions, such as [[Scheduling (computing)|scheduling]] [[Process (computing)|processes]] and controlling [[peripheral]]s.<ref name="osc-overview"/>
+
+In the 1950s, the programmer, who was also the operator, would write a program and run it. After the program finished executing, the output may have been printed, or it may have been punched onto paper tape or cards for later processing.<ref name="osc-ch1-p6"/> More often than not the program did not work. The programmer then looked at the console lights and fiddled with the console switches. If less fortunate, a memory printout was made for further study. In the 1960s, programmers reduced the amount of wasted time by automating the operator's job. A program called an ''operating system'' was kept in the computer at all times.<ref name="sco-ch1-p11">{{cite book
+ |url=https://archive.org/details/structuredcomput00tane/page/11
+ |title=Structured Computer Organization, Third Edition
+ |last=Tanenbaum
+ |first=Andrew S.
+ |publisher=Prentice Hall
+ |year=1990
+ |isbn=978-0-13-854662-5
+ |page=[https://archive.org/details/structuredcomput00tane/page/11 11]}}</ref>
+
+The term ''operating system'' may refer to two levels of software.<ref name="lpi-ch2-p21">{{cite book
+ |title=The Linux Programming Interface
+ |last=Kerrisk
+ |first=Michael
+ |publisher=No Starch Press
+ |year=2010
+ |isbn=978-1-59327-220-3
+ |page=21}}</ref> The operating system may refer to the [[Kernel (operating system)|kernel program]] that manages the [[Process (computing)|processes]], [[Computer memory|memory]], and [[Peripheral|devices]]. More broadly, the operating system may refer to the entire package of the central software. The package includes a kernel program, [[Command-line interface|command-line interpreter]], [[graphical user interface]], [[Utility software|utility programs]], and [[Source-code editor|editor]].<ref name="lpi-ch2-p21"/>
+
+====Kernel Program====
+[[File:Kernel Layout.svg|thumb|A kernel connects the application software to the hardware of a computer.]]
+The kernel's main purpose is to manage the limited resources of a computer:
+* The kernel program should perform [[process scheduling]],<ref name="lpi-ch2-p22">{{cite book
+ |title=The Linux Programming Interface
+ |last=Kerrisk
+ |first=Michael
+ |publisher=No Starch Press
+ |year=2010
+ |isbn=978-1-59327-220-3
+ |page=22}}</ref> which is also known as a [[context switch]]. The kernel creates a [[process control block]] when a ''computer program'' is [[Loader (computing)|selected for execution]]. However, an executing program gets exclusive access to the [[central processing unit]] only for a [[time slice]]. To provide each user with the [[Time-sharing|appearance of continuous access]], the kernel quickly [[Preemption (computing)|preempts]] each process control block to execute another one. The goal for [[Systems programming|system developers]] is to minimize [[dispatch latency]].
+[[File:Virtual memory.svg|thumb|250px|Physical memory is scattered around RAM and the hard disk. Virtual memory is one continuous block.]]
+* The kernel program should perform [[memory management]].
+:* When the kernel initially [[Loader (computing)|loads]] an executable into memory, it divides the address space logically into [[Region-based memory management|regions]].<ref name="duos-ch6-p152">{{cite book
+  | last = Bach
+  | first = Maurice J.
+  | title = The Design of the UNIX Operating System
+  | publisher = Prentice-Hall, Inc.
+  | year = 1986
+  | page = 152
+  | isbn = 0-13-201799-7
+  }}</ref> The kernel maintains a master-region table and many per-process-region (pregion) tables—one for each running [[Process (computing)|process]].<ref name="duos-ch6-p152"/> These tables constitute the [[virtual address space]]. The master-region table is used to determine where its contents are located in [[physical memory]]. The pregion tables allow each process to have its own program (text) pregion, data pregion, and stack pregion.
+:*The program pregion stores machine instructions. Since machine instructions do not change, the program pregion may be shared by many processes of the same executable.<ref name="duos-ch6-p152"/>
+:* To save time and memory, the kernel may load only blocks of execution instructions from the disk drive, not the entire execution file completely.<ref name="lpi-ch2-p22"/>
+:*The kernel is responsible for translating virtual addresses into [[physical address]]es. The kernel may request data from the [[memory controller]] and, instead, receive a [[page fault]].<ref name="sco6th-ch6-p443">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 443
+  | isbn = 978-0-13-291652-3
+  }}</ref> If so, the kernel accesses the [[memory management unit]] to populate the physical data region and translate the address.<ref name="esa-ch1-p8">{{cite book
+  | last = Lacamera
+  | first = Daniele
+  | title = Embedded Systems Architecture
+  | publisher = Packt
+  | year = 2018
+  | page = 8
+  | isbn = 978-1-78883-250-2
+  }}</ref>
+:* The kernel allocates memory from the ''heap'' upon request by a process.<ref name="cpl-p185_quote1">{{cite book
+ |title=The C Programming Language Second Edition
+ |last1=Kernighan
+ |first1=Brian W.
+ |last2=Ritchie
+ |first2=Dennis M.
+ |publisher=Prentice Hall
+ |year=1988
+ |isbn=0-13-110362-8
+ |quote="malloc calls upon the operating system to obtain more memory as needed."
+ |page=185}}</ref> When the process is finished with the memory, the process may request for it to be [[Manual memory management|freed]].<ref name="cpl-p185_quote2">{{cite book
+ |title=The C Programming Language Second Edition
+ |last1=Kernighan
+ |first1=Brian W.
+ |last2=Ritchie
+ |first2=Dennis M.
+ |publisher=Prentice Hall
+ |year=1988
+ |isbn=0-13-110362-8
+ |quote="Thus its [the operating system's] free storage is kept as a list of free blocks."
+ |page=185}}</ref> If the process exits without requesting all allocated memory to be freed, then the kernel performs [[Garbage collection (computer science)|garbage collection]] to free the memory.<ref name="lpi-p22_free">{{cite book
+ |title=The Linux Programming Interface
+ |last=Kerrisk
+ |first=Michael
+ |publisher=No Starch Press
+ |year=2010
+ |isbn=978-1-59327-220-3
+ |quote="Once a process has completed execution, the kernel ensures that the resources it uses are freed for subsequent reuse by later programs."
+ |page=22}}</ref>
+:* The kernel also ensures that a process only accesses its own memory, and not that of the kernel or other processes.<ref name="lpi-ch2-p22"/>
+* The kernel program should perform [[File system|file system management]].<ref name="lpi-ch2-p22"/> The kernel has instructions to create, retrieve, update, and delete files.
+* The kernel program should perform [[Peripheral|device management]].<ref name="lpi-ch2-p22"/> The kernel provides programs to standardize and simplify the interface to the mouse, keyboard, disk drives, printers, and other devices. Moreover, the kernel should arbitrate access to a device if two processes request it at the same time.
+* The kernel program should perform [[network management]].<ref name="lpi-ch2-p23">{{cite book
+ |title=The Linux Programming Interface
+ |last=Kerrisk
+ |first=Michael
+ |publisher=No Starch Press
+ |year=2010
+ |isbn=978-1-59327-220-3
+ |page=23}}</ref> The kernel transmits and receives [[Network packet|packets]] on behalf of processes. One key service is to find an efficient [[Routing table|route]] to the target system.
+* The kernel program should provide [[system calls|system level functions]] for programmers to use.<ref name="upe-ch7-p201">{{cite book
+ |title=The Unix Programming Environment
+ |last=Kernighan
+ |first=Brian W.
+ |publisher=Prentice Hall
+ |year=1984
+ |isbn=0-13-937699-2
+ |page=201}}</ref>
+** Programmers access files through a relatively simple interface that in turn executes a relatively complicated low-level I/O interface. The low-level interface includes file creation, [[file descriptor]]s, file seeking, physical reading, and physical writing.
+** Programmers create processes through a relatively simple interface that in turn executes a relatively complicated low-level interface.
+** Programmers perform date/time arithmetic through a relatively simple interface that in turn executes a relatively complicated low-level time interface.<ref name="lpi-ch10-p187">{{cite book
+ |title=The Linux Programming Interface
+ |last=Kerrisk
+ |first=Michael
+ |publisher=No Starch Press
+ |year=2010
+ |isbn=978-1-59327-220-3
+ |page=187}}</ref>
+* The kernel program should provide a [[Inter-process communication|communication channel]] between executing processes.<ref name="usp-ch6-p121">{{cite book
+ |title=Unix System Programming
+ |last=Haviland
+ |first=Keith
+ |publisher=Addison-Wesley Publishing Company
+ |year=1987
+ |isbn=0-201-12919-1
+ |page=121}}</ref> For a large software system, it may be desirable to [[Software engineering|engineer]] the system into smaller processes. Processes may communicate with one another by sending and receiving [[Signal (IPC)|signals]].
+
+Originally, operating systems were programmed in [[assembly language|assembly]]; however, modern operating systems are typically written in higher-level languages like [[C (programming language)|C]], [[Objective-C]], and [[Swift (programming language)|Swift]].{{efn|The [[UNIX]] operating system was written in C, [[macOS]] was written in Objective-C, and Swift replaced Objective-C.}}
+
+===Utility program===
+A [[utility (computing)|utility]] is a program that aids system administration and software execution. An operating system typically provides utilities to check hardware such as storage, memory, speakers, and printers.<ref name="pis-ch4-p145">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 145
+  | isbn = 0-619-06489-7
+}}</ref> A utility may optimize the performance of a storage device. System utilities monitor hardware and network performance and may trigger an alert when a metric is outside the nominal range.<ref name="pis-ch4-p146">{{cite book
+  | last = Stair
+  | first = Ralph M.
+  | title = Principles of Information Systems, Sixth Edition
+  | publisher = Thomson
+  | year = 2003
+  | page = 146
+  | isbn = 0-619-06489-7
+}}</ref> A utility may compress files to reduce storage space and network transmission time.<ref name="pis-ch4-p145"/> A utility may sort and merge data sets<ref name="pis-ch4-p146"/> or detect [[computer virus]]es.<ref name="pis-ch4-p146"/>
+
+===Microcode program===
+{{main|Microcode}}
+{{Multiple image| width=96 | direction = vertical | align = right
+|image1=Not-gate-en.svg|caption1=NOT gate
+|image2=NAND_ANSI_Labelled.svg|caption2=NAND gate
+|image3=NOR_ANSI_Labelled.svg|caption3=NOR gate
+|image4=AND_ANSI_Labelled.svg|caption4=AND gate
+|image5=OR_ANSI_Labelled.svg|caption5=OR gate
+}}
+A [[Microcode|microcode program]] is the bottom-level interpreter{{efn|The bottom-level interpreter is technically called the Level 1 layer. The Level 0 layer is the digital logic layer. Three middle layers exist, and the Level 5 layer is the Problem-oriented language layer.<ref name="sco6th-ch1-p5">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 5
+  | isbn = 978-0-13-291652-3
+  }}</ref>}} that controls the [[datapath]] of software-driven computers.<ref name="sco6th-ch1-p6">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 6
+  | isbn = 978-0-13-291652-3
+  }}</ref>
+(Advances in [[Random logic|hardware]] have migrated these operations to [[Control unit#Hardwired control unit|hardware execution circuits]].)<ref name="sco6th-ch1-p6"/> Microcode instructions allow the programmer to more easily implement the [[Logic level|digital logic level]]<ref name="sco6th-ch4-p243">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 243
+  | isbn = 978-0-13-291652-3
+  }}</ref>—the computer's real hardware. The digital logic level is the boundary between [[computer science]] and [[computer engineering]].<ref name="sco6th-ch3-p147">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 147
+  | isbn = 978-0-13-291652-3
+  }}</ref>
+
+A [[logic gate]] is a tiny [[Field-effect transistor|transistor]] that can return one of two signals: on or off.<ref name="sco6th-ch3-p148">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 148
+  | isbn = 978-0-13-291652-3
+  }}</ref>
+
+* Having one transistor forms the [[NOT gate]].
+* Connecting two transistors in series forms the [[NAND gate]].
+* Connecting two transistors in parallel forms the [[NOR gate]].
+* Connecting a NOT gate to a NAND gate forms the [[AND gate]].
+* Connecting a NOT gate to a NOR gate forms the [[OR gate]].
+
+These five gates form the building blocks of [[Boolean algebra|binary algebra]]—the digital logic functions of the computer.
+
+Microcode instructions are [[Assembly language#Mnemonics|mnemonics]] programmers may use to execute digital logic functions instead of forming them in binary algebra. They are stored in a CPU's [[control store]].<ref name="sco6th-ch4-p253">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 253
+  | isbn = 978-0-13-291652-3
+  }}</ref>
+These hardware-level instructions move data throughout the [[data path]].
+
+The micro-instruction cycle begins when the [[microsequencer]] uses its microprogram counter to ''fetch'' the next [[machine instruction]] from [[random-access memory]].<ref name="sco6th-ch4-p255">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 255
+  | isbn = 978-0-13-291652-3
+  }}</ref> The next step is to ''decode'' the machine instruction by selecting the proper output line to the hardware module.<ref name="sco6th-ch3-p161">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 161
+  | isbn = 978-0-13-291652-3
+  }}</ref>
+The final step is to ''execute'' the instruction using the hardware module's set of gates.
+
+[[File:ALU block.svg|thumb|right|A symbolic representation of an ALU]]
+Instructions to perform arithmetic are passed through an [[arithmetic logic unit]] (ALU).<ref name="sco6th-ch3-p166">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 166
+  | isbn = 978-0-13-291652-3
+  }}</ref> The ALU has circuits to perform elementary operations to add, shift, and compare integers. By combining and looping the elementary operations through the ALU, the CPU performs its complex arithmetic.
+
+Microcode instructions move data between the CPU and the [[memory controller]]. Memory controller microcode instructions manipulate two [[Processor register|registers]]. The [[memory address register]] is used to access each memory cell's address. The [[memory data register]] is used to set and read each cell's contents.<ref name="sco6th-ch4-p249">{{cite book
+  | last = Tanenbaum
+  | first = Andrew S.
+  | title = Structured Computer Organization, Sixth Edition
+  | publisher = Pearson
+  | year = 2013
+  | page = 249
+  | isbn = 978-0-13-291652-3
+  }}</ref>
+
+==Notes==
+{{Notelist}}
+
+==References==
+{{reflist|30em}}
+
+{{DEFAULTSORT:Computer Program}}
+[[Category:Computer programming]]
+[[Category:Software]]
+
+[[ไฟล์:Hello world c.svg|thumb|300px|[[รหัสต้นฉบับ]] "Hello, World" ใน[[ภาษาซี]] [[สนิปเพต]]ที่รู้จักกันครั้งแรกในหนังสือ ''[[เดอะซีโปรแกรมมิงแลงกวิจ]]'' เขียนโดย[[ไบรอัน เคอร์เนแฮน]] และ[[เดนนิส ริตชี]] ในปี ค.ศ. 1974]]
+
+'''โปรแกรมคอมพิวเตอร์''' ({{langx|en|computer program}}) เป็น[[ชุดของคำสั่งเครื่อง|ชุดคำสั่ง]]<ref name="aup-ch4-p132">{{cite book
+  | last = Rochkind
+  | first = Marc J.
+  | title = Advanced Unix Programming, Second Edition
+  | publisher = Addison-Wesley
+  | year = 2004
+  | page = 1.1.2
+}}</ref> ที่ปฏิบัติงานเฉพาะเมื่อ[[คอมพิวเตอร์]]สั่ง[[กระทำการ]] (execute) คอมพิวเตอร์เครื่องหนึ่งต้องการใช้โปรแกรมในการสั่งงาน และกระทำตามชุดคำสั่งใน[[หน่วยประมวลผลกลาง]]<ref name="osc-ch3-p58">{{cite book
+  | last = Silberschatz
+  | first = Abraham
+  | title = Operating System Concepts, Fourth Edition
+  | publisher = Addison-Wesley
+  | year = 1994
+  | page = 58
+  | isbn = 0-201-50480-4
+}}</ref>
+
+โปรแกรมคอมพิวเตอร์มักเขียนโดย[[นักเขียนโปรแกรม]]โดยใช้[[ภาษาโปรแกรม]] [[คอมไพเลอร์]]สามารถแปลง[[รหัสเครื่อง]] (machine code) ที่ประกอบด้วยชุดคำสั่งที่คอมพิวเตอร์สามารถกระทำการได้โดยตรงได้จาก[[รหัสต้นฉบับ]] (source code) แบบมนุษย์อ่านได้ หรืออีกทางหนึ่ง โปรแกรมคอมพิวเตอร์สามารถกระทำการได้ด้วยอินเทอร์พรีเตอร์
+
+วนหนึ่งของโปรแกรมคอมพิวเตอร์ที่กระทำงานงานหนึ่งที่นิยามไว้อย่างดี เรียกว่า [[ขั้นตอนวิธี]] (algorithm) ชุดของโปรแกรมคอมพิวเตอร์ [[คลัง (โปรแกรม)|คลัง]] (library) และ[[ข้อมูล (คอมพิวเตอร์)|ข้อมูล]]ที่เกี่ยวข้องเรียกว่า[[ซอฟต์แวร์]] โปรแกรมคอมพิวเตอร์อาจจัดประเภทได้จากฟังก์ชันยาวหลายบรรทัด เช่น [[โปรแกรมประยุกต์]] หรือ[[ซอฟต์แวร์ระบบ]]
+
+== ดูเพิ่ม ==
+* [[บั๊ก]]
+
+== อ้างอิง ==
+{{รายการอ้างอิง}}
+
+[[หมวดหมู่:ซอฟต์แวร์]]
+[[หมวดหมู่:การเขียนโปรแกรม]]
+{{โครงซอฟต์แวร์}}
+
